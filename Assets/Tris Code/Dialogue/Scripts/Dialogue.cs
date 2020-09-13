@@ -8,7 +8,7 @@ public class Dialogue
     [TextArea(3, 10)]
     //strings for names and sentences
     public string[] sentences;
-    public string[] names;
+    public Sprite[] names;
 
     //different expression sprites and backgrounds
     public Sprite[] sprites;
