@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+[System.Serializable]
 public class Dialogue
 {
     [TextArea(3, 10)]
-    //strings for names and sentences
+    //strings for names and sentences, options and everything pretty much
+    public bool[] prompt;
     public string[] sentences;
     public Sprite[] names;
 

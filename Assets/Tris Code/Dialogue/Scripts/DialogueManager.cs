@@ -44,6 +44,8 @@ public class DialogueManager : MonoBehaviour
     private bool isActive; //Checks if dialogue is on or not
     private bool endText; //if on will keep the text off constantly
     private bool sceneTransition; //if on will go to a marked scene once the dialogue is over
+    private bool onLeftChar; //checking if the current sentence is the left character speaking
+    private bool onRightChar; //checking if the current sentence is the right character speaking 
 
     #endregion
 
@@ -56,35 +58,51 @@ public class DialogueManager : MonoBehaviour
         nameRightAnim = nameRight.GetComponent<Animator>();
         textBoxAnim = textBox.GetComponent<Animator>();
         characterLeftSprite = characterLeft.GetComponent<Animator>();
-        characterRightSprite = characterLeft.GetComponent<Animator>();
+        characterRightSprite = characterRight.GetComponent<Animator>();
+        nameLeftSprite = nameLeft.GetComponent<Image>();
+        nameRightSprite = nameRight.GetComponent<Image>();
         BGSprite = BG.GetComponent<Image>();
         #endregion 
 
-        //Turning bools to default values
-        endText = false;
+        //Turning bools and counts to default values
         isActive = false;
         sceneTransition = false;
+        onLeftChar = false;
+        onRightChar = false;
 
         //Resetting Queues
         sentences = new Queue<string>();
         names = new Queue<Sprite>();
         sprites = new Queue<Sprite>();
 
-        //Turning off All GameObjects
-        #region turning off game objects
-        nameLeft.SetActive(false);
-        nameRight.SetActive(false);
+        //Turning off everything
+        #region turning off variables
+        //characterLeftSprite.SetBool("isOpen", false);
+        //characterRightSprite.SetBool("isOpen", false);
+        //nameLeftAnim.SetBool("isOpen", false);
+        //nameRightAnim.SetBool("isOpen", false);
+        //textBoxAnim.SetBool("isOpen", false);
+
+        BG.SetActive(false);
         textBox.SetActive(false);
         characterLeft.SetActive(false);
         characterRight.SetActive(false);
-        BG.SetActive(false);
+        nameLeft.SetActive(false);
+        nameRight.SetActive(false);
+
         #endregion
 
     }
 
     public IEnumerator StartDialogue(Dialogue dialogue)
     {
+        //turning off all bool variables so they can be set later
         endText = false; //Since Dialogue is Starting, end text does not need to be on
+        isActive = false;
+        sceneTransition = false;
+        onLeftChar = false;
+        onRightChar = false;
+
 
         //Setting all the bools that need to be set equal to their counterpart in dialogue
         sceneTransition = dialogue.sceneTransition;
@@ -121,15 +139,19 @@ public class DialogueManager : MonoBehaviour
         nameRight.SetActive(true);
         #endregion
 
+
+        textBoxAnim.SetBool("isOpen", true);
         yield return new WaitForSeconds(0.4f);
+        DisplayNextSentence();
     }
 
     public void DisplayNextSentence()
     {
         //Ends Dialogue if count of sentances reaches 0
-        if(sentences.Count == 0)
+        if(sentences.Count <= 0)
         {
-           
+            StartCoroutine("EndDialogue");
+            return;
         }
 
         //Making local variables for sentences and names
@@ -137,29 +159,93 @@ public class DialogueManager : MonoBehaviour
         Sprite name = names.Dequeue();
 
         StopAllCoroutines();
+        StartCoroutine(DisplayNextName(name));
+        StartCoroutine(TypeSentence(sentence));
+
     }
 
-    IEnumerator DisplayNextName(Sprite name)
+    public IEnumerator DisplayNextName(Sprite name)
     {
+        
         Sprite prevNameLeft = nameLeftSprite.sprite;
         Sprite prevNameRight = nameRightSprite.sprite;
 
-        if(prevNameLeft == null)
+        yield return new WaitForSeconds(0.1f);
+        
+        if (prevNameLeft == null)
         {
             nameLeftSprite.sprite = name;
+            nameLeftAnim.SetBool("isOpen", true);
+            onLeftChar = true;
+            onRightChar = false;
+            //enabling character anim
+            characterLeftSprite.SetBool("isOpen", true);
+            
+
         } else if(name == prevNameLeft && prevNameLeft != null)
         {
             nameLeftSprite.sprite = name;
+            nameLeftAnim.SetBool("isOpen", true);
+            onLeftChar = true;
+            onRightChar = false;
+
+            //enabling character anim
+            characterLeftSprite.SetBool("isOpen", true);
         }
         else
         {
+            nameRightAnim.SetBool("isOpen", true);
             nameRightSprite.sprite = name;
+            onLeftChar = false;
+            onRightChar = true;
+
+            //enabling character anim
+            characterRightSprite.SetBool("isOpen", true);
         }
 
-        yield return new WaitForSeconds(0.4f);
     }
 
+    public IEnumerator TypeSentence(string sentence)
+    {
 
+
+        dialogueText.text = "";
+        //typing each word letter for letter
+        foreach (char letter in sentence.ToCharArray())
+        {
+            if (endText == true)
+            {
+
+            }
+            dialogueText.text += letter;
+            yield return null;
+        }
+
+    }
+
+    public IEnumerator EndDialogue()
+    {
+        Debug.Log("ENDED");
+        endText = true;
+        //Enable Player controls
+
+        //Turns all Animators to off
+        yield return new WaitForSeconds(0.4f);
+        characterLeftSprite.SetBool("isOpen", false);
+        characterRightSprite.SetBool("isOpen", false);
+        nameLeftAnim.SetBool("isOpen", false);
+        nameRightAnim.SetBool("isOpen", false);
+        textBoxAnim.SetBool("isOpen", false);
+
+        yield return new WaitForSeconds(3f);
+        //Diables all GameObjects
+        BG.SetActive(false);
+        textBox.SetActive(false);
+        characterLeft.SetActive(false);
+        characterRight.SetActive(false);
+        nameLeft.SetActive(false);
+        nameRight.SetActive(false);
+    }
     // Update is called once per frame
     void Update()
     {
