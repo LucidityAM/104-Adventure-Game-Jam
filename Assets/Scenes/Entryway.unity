@@ -121,6 +121,150 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &46091524
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 46091526}
+  - component: {fileID: 46091525}
+  m_Layer: 0
+  m_Name: Global Light 2D
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &46091525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 46091524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_LightType: 4
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0.5
+  m_Color: {r: 0.745283, g: 0.73473656, b: 0.73473656, a: 1}
+  m_Intensity: 1
+  m_LightVolumeOpacity: 0
+  m_ApplyToSortingLayers: 00000000
+  m_LightCookieSprite: {fileID: 0}
+  m_UseNormalMap: 0
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_ShadowIntensity: 0
+  m_ShadowVolumeIntensity: 0
+  m_PointLightInnerAngle: 360
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 0
+  m_PointLightOuterRadius: 1
+  m_PointLightDistance: 3
+  m_PointLightQuality: 1
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: 0.5, z: 0}
+  - {x: -0.5, y: 0.5, z: 0}
+--- !u!4 &46091526
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 46091524}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.77324, y: -0.15777496, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &49091936
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 49091937}
+  - component: {fileID: 49091938}
+  m_Layer: 0
+  m_Name: Point Light 2D
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &49091937
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 49091936}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2809258151005149280}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &49091938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 49091936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_LightType: 3
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0.669
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 0.81
+  m_LightVolumeOpacity: 0
+  m_ApplyToSortingLayers: 00000000
+  m_LightCookieSprite: {fileID: 0}
+  m_UseNormalMap: 0
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_ShadowIntensity: 0
+  m_ShadowVolumeIntensity: 0
+  m_PointLightInnerAngle: 360
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 0
+  m_PointLightOuterRadius: 1.16
+  m_PointLightDistance: 3
+  m_PointLightQuality: 1
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: 0.5, z: 0}
+  - {x: -0.5, y: 0.5, z: 0}
 --- !u!1 &71992542
 GameObject:
   m_ObjectHideFlags: 0
@@ -132,7 +276,7 @@ GameObject:
   - component: {fileID: 71992543}
   - component: {fileID: 71992544}
   - component: {fileID: 71992545}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Interiors_free_48x48 - Copy_32
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -315,7 +459,7 @@ GameObject:
   - component: {fileID: 243731000}
   - component: {fileID: 243731001}
   - component: {fileID: 243731002}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Interiors_free_48x48 - Copy_39 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -424,7 +568,7 @@ GameObject:
   - component: {fileID: 275708783}
   - component: {fileID: 275708784}
   - component: {fileID: 275708785}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Interiors_free_48x48 - Copy_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -533,7 +677,7 @@ GameObject:
   - component: {fileID: 296014714}
   - component: {fileID: 296014715}
   - component: {fileID: 296014716}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Interiors_free_48x48 - Copy_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -642,7 +786,7 @@ GameObject:
   - component: {fileID: 304525242}
   - component: {fileID: 304525243}
   - component: {fileID: 304525244}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Interiors_free_48x48 - Copy_36 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -751,7 +895,7 @@ GameObject:
   - component: {fileID: 374606668}
   - component: {fileID: 374606669}
   - component: {fileID: 374606670}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Interiors_free_48x48 - Copy_4 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1931,7 +2075,7 @@ GameObject:
   - component: {fileID: 510630972}
   - component: {fileID: 510630973}
   - component: {fileID: 510630974}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Interiors_free_48x48 - Copy_27
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2040,7 +2184,7 @@ GameObject:
   - component: {fileID: 563738391}
   - component: {fileID: 563738392}
   - component: {fileID: 563738393}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Interiors_free_48x48 - Copy_16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4911,7 +5055,7 @@ GameObject:
   - component: {fileID: 721718283}
   - component: {fileID: 721718284}
   - component: {fileID: 721718285}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Interiors_free_48x48 - Copy_7 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5094,7 +5238,7 @@ GameObject:
   - component: {fileID: 782388694}
   - component: {fileID: 782388695}
   - component: {fileID: 782388696}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Interiors_free_48x48 - Copy_16 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5202,7 +5346,7 @@ GameObject:
   - component: {fileID: 827311260}
   - component: {fileID: 827311261}
   - component: {fileID: 827311262}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Interiors_free_48x48 - Copy_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5522,7 +5666,7 @@ GameObject:
   - component: {fileID: 1018983443}
   - component: {fileID: 1018983444}
   - component: {fileID: 1018983445}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Interiors_free_48x48 - Copy_7 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5631,7 +5775,7 @@ GameObject:
   - component: {fileID: 1423466664}
   - component: {fileID: 1423466665}
   - component: {fileID: 1423466666}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Interiors_free_48x48 - Copy_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5905,7 +6049,7 @@ GameObject:
   - component: {fileID: 1558542121}
   - component: {fileID: 1558542122}
   - component: {fileID: 1558542123}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Interiors_free_48x48 - Copy_35
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6014,7 +6158,7 @@ GameObject:
   - component: {fileID: 1582778018}
   - component: {fileID: 1582778019}
   - component: {fileID: 1582778020}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Interiors_free_48x48 - Copy_11 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6123,7 +6267,7 @@ GameObject:
   - component: {fileID: 1745202405}
   - component: {fileID: 1745202406}
   - component: {fileID: 1745202407}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Interiors_free_48x48 - Copy_36
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6232,7 +6376,7 @@ GameObject:
   - component: {fileID: 1747663014}
   - component: {fileID: 1747663015}
   - component: {fileID: 1747663016}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Interiors_free_48x48 - Copy_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6489,7 +6633,7 @@ GameObject:
   - component: {fileID: 1954043423}
   - component: {fileID: 1954043424}
   - component: {fileID: 1954043425}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Interiors_free_48x48 - Copy_39
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6598,7 +6742,7 @@ GameObject:
   - component: {fileID: 2060052689}
   - component: {fileID: 2060052690}
   - component: {fileID: 2060052691}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Interiors_free_48x48 - Copy_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6634,7 +6778,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
-  m_RenderingLayerMask: 1
+  m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
@@ -6707,7 +6851,7 @@ GameObject:
   - component: {fileID: 2081736908}
   - component: {fileID: 2081736909}
   - component: {fileID: 2081736910}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Interiors_free_48x48 - Copy_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7124,6 +7268,7 @@ Transform:
   - {fileID: 2809258149158517848}
   - {fileID: 2809258149837942802}
   - {fileID: 2089884375}
+  - {fileID: 49091937}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
