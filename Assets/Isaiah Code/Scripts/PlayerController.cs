@@ -43,4 +43,12 @@ public class PlayerController : MonoBehaviour
             anim.SetBool("moving", true);
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Moveable"))
+        {
+            Debug.Log("test success!");
+        }
+    }
 }

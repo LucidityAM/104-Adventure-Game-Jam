@@ -6742,9 +6742,9 @@ GameObject:
   - component: {fileID: 2060052689}
   - component: {fileID: 2060052690}
   - component: {fileID: 2060052691}
-  m_Layer: 8
-  m_Name: Interiors_free_48x48 - Copy_11
-  m_TagString: Untagged
+  m_Layer: 0
+  m_Name: Test Table
+  m_TagString: Moveable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6757,7 +6757,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2060052688}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.5707703, y: -1.9293995, z: -65.71787}
+  m_LocalPosition: {x: 3.839, y: -1.363, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2110659601}
@@ -7172,7 +7172,7 @@ GameObject:
   - component: {fileID: 2809258149837942806}
   m_Layer: 0
   m_Name: Player Sprite
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7302,6 +7302,7 @@ GameObject:
   - component: {fileID: 2809258151005149280}
   - component: {fileID: 2809258151005149281}
   - component: {fileID: 2809258151005149283}
+  - component: {fileID: 2809258151005149284}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -7327,6 +7328,27 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   anim: {fileID: 2809258151005149281}
+--- !u!50 &2809258151005149284
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2809258151005149282}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1839735485 &5080315998347500733
 Tilemap:
   m_ObjectHideFlags: 0
