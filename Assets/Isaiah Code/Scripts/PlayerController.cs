@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour
             {
                 if(!Physics2D.OverlapCircle(movePoint.position + new Vector3((Input.GetAxisRaw("Horizontal") * .48f), 0f, 0f), .2f, whatStopsMovement))
                 {
-                    movePoint.position += new Vector3((Input.GetAxisRaw("Horizontal") * .48f), 0f, 0f);
+                    movePoint.position += new Vector3((Input.GetAxisRaw("Horizontal") *.48f), 0f, 0f);
                 }
             } else if (Mathf.Abs(Input.GetAxisRaw("Vertical")) == 1f)
             {
@@ -41,6 +41,36 @@ public class PlayerController : MonoBehaviour
         }else
         {
             anim.SetBool("moving", true);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.CompareTag("Moveable"))
+        {
+            var relativePosition = transform.InverseTransformPoint(collision.transform.position);
+
+            if (relativePosition.x > 0)
+            {
+                Debug.Log("left");
+                collision.transform.position += new Vector3(.48f, 0f, 0f);
+            }
+            else
+            {
+                Debug.Log("right");
+                collision.transform.position += new Vector3(-.48f, 0f, 0f);
+            }
+
+            if (relativePosition.y > 0)
+            {
+                Debug.Log("down");
+                collision.transform.position += new Vector3(0f, .48f, 0f);
+            }
+            else
+            {
+                Debug.Log("up");
+                collision.transform.position += new Vector3(0f, -.48f, 0f);
+            }
         }
     }
 }

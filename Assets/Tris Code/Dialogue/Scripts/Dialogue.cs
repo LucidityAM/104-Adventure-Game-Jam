@@ -8,6 +8,7 @@ public class Dialogue
 {
     [TextArea(3, 10)]
     //strings for names and sentences, options and everything pretty much
+    public bool[] prompt;
     public string[] sentences;
     public Sprite[] names;
 
@@ -17,6 +18,4 @@ public class Dialogue
 
     //checking if its gonna send you to another scene and stuff
     public bool sceneTransition;
-    public bool prompt;
-    public Question question;
 }

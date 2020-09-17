@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.EventSystems;
 
 public class QuestionManager : MonoBehaviour
 {
@@ -31,34 +30,11 @@ public class QuestionManager : MonoBehaviour
     public GameObject shade;
     private Animator shadeAnim;
 
-
-    //private variables that will be taken from Question
-    private string option1;
-    private string option2;
-    private string option3;
-    private Dialogue path1;
-    private Dialogue path2;
-    private Dialogue path3;
-    private string correctAnswer;
-
     public static QuestionManager Instance;
 
     #endregion
     void Start()
     {
-        //resetting privates from question
-        option1 = null;
-        option2 = null;
-        option3 = null;
-        path1 = null;
-        path2 = null;
-        path3 = null;
-
-        //resetting text in options
-        text1.text = "";
-        text2.text = "";
-        text3.text = "";
-
         //button buttons
         button1b = button1.GetComponent<Button>();
         button2b = button2.GetComponent<Button>();
@@ -69,7 +45,7 @@ public class QuestionManager : MonoBehaviour
         button3Anim = button3.GetComponent<Animator>();
         //promptSprite variables
         promptSpriteAnim = promptSprite.GetComponent<Animator>();
-        shadeAnim = shade.GetComponent<Animator>();
+
 
         //turning off all variables that need to be turned off
         //buttons
@@ -83,16 +59,8 @@ public class QuestionManager : MonoBehaviour
 
     }
 
-    public IEnumerator StartQuestion(Question question)
+    public IEnumerator StartDialogue()
     {
-        //setting privates from Question
-        option1 = question.option1;
-        option2 = question.option2;
-        option3 = question.option3;
-        path1 = question.path1;
-        path2 = question.path2;
-        path3 = question.path3;
-        correctAnswer = question.correctAnswer;
         //turning all gameobjects on
         shade.SetActive(true);
         promptSprite.SetActive(true);
@@ -106,63 +74,13 @@ public class QuestionManager : MonoBehaviour
         promptSprite.SetActive(true);
         promptSpriteAnim.SetBool("isOpen", true);
         yield return new WaitForSeconds(0.4f);
-        StartCoroutine("DisplayOptions");
-    }
-
-    public IEnumerator DisplayOptions()
-    {
         button1.SetActive(true);
         button2.SetActive(true);
         button3.SetActive(true);
-        text1.text = option1;
-        text2.text = option2;
-        text3.text = option3;
         button1Anim.SetBool("isOpen", true);
         yield return new WaitForSeconds(0.3f);
         button2Anim.SetBool("isOpen", true);
         yield return new WaitForSeconds(0.3f);
         button3Anim.SetBool("isOpen", true);
-    }
-
-    //public void DisplayNextEvent()
-    //{
-    //    if (EventSystem.current.currentSelectedGameObject.name.Contains(correctAnswer))
-    //    {
-
-    //    }
-    //}
-
-    public void DisplayPath1()
-    {
-        CloseQuestions();
-        StartCoroutine(FindObjectOfType<DialogueManager>().StartDialogue(path1));
-    }
-
-    public void DisplayPath2()
-    {
-        CloseQuestions();
-        StartCoroutine(FindObjectOfType<DialogueManager>().StartDialogue(path2));
-    }
-
-    public void DisplayPath3()
-    {
-        CloseQuestions();
-        StartCoroutine(FindObjectOfType<DialogueManager>().StartDialogue(path3));
-    }
-
-    public void CloseQuestions()
-    {
-        button1Anim.SetBool("isOpen", false);
-        button2Anim.SetBool("isOpen", false);
-        button3Anim.SetBool("isOpen", false);
-        promptSpriteAnim.SetBool("isOpen", false);
-        shadeAnim.SetBool("isOpen", false);
-
-        button1.SetActive(false);
-        button2.SetActive(false);
-        button3.SetActive(false);
-        promptSprite.SetActive(false);
-        shade.SetActive(false);
-
     }
 }
