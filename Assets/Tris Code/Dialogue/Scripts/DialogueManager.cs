@@ -36,6 +36,9 @@ public class DialogueManager : MonoBehaviour
     //Player access for preventing movement
 
 
+    //private question to trigger a question at the end of dialogue
+    private Question question;
+
 
     //Making instance of the DialogueManager, so it can be reapplied
     public static DialogueManager Instance;
@@ -46,6 +49,7 @@ public class DialogueManager : MonoBehaviour
     private bool sceneTransition; //if on will go to a marked scene once the dialogue is over
     private bool onLeftChar; //checking if the current sentence is the left character speaking
     private bool onRightChar; //checking if the current sentence is the right character speaking 
+    private bool prompt; //if prompt is on. ending the dialogue will lead to a question
 
     #endregion
 
@@ -69,6 +73,10 @@ public class DialogueManager : MonoBehaviour
         sceneTransition = false;
         onLeftChar = false;
         onRightChar = false;
+        prompt = false;
+
+        //Resetting question
+        question = null;
 
         //Resetting Queues
         sentences = new Queue<string>();
@@ -96,16 +104,35 @@ public class DialogueManager : MonoBehaviour
 
     public IEnumerator StartDialogue(Dialogue dialogue)
     {
+        #region spammy disabling
+        //turning off animators here because it works better for some reason
+        characterLeftSprite.SetBool("isOpen", false);
+        characterRightSprite.SetBool("isOpen", false);
+        nameLeftAnim.SetBool("isOpen", false);
+        nameRightAnim.SetBool("isOpen", false);
+
+        BG.SetActive(false);
+        textBox.SetActive(false);
+        characterLeft.SetActive(false);
+        characterRight.SetActive(false);
+        nameLeft.SetActive(false);
+        nameRight.SetActive(false);
+        #endregion
+
         //turning off all bool variables so they can be set later
         endText = false; //Since Dialogue is Starting, end text does not need to be on
         isActive = false;
         sceneTransition = false;
         onLeftChar = false;
         onRightChar = false;
-
+        BGSprite = null;
+        nameLeftSprite.sprite = null;
+        nameRightSprite.sprite = null;
 
         //Setting all the bools that need to be set equal to their counterpart in dialogue
         sceneTransition = dialogue.sceneTransition;
+        prompt = dialogue.prompt;
+        question = dialogue.question;
 
         //Player stopping happens HERE
 
@@ -139,7 +166,7 @@ public class DialogueManager : MonoBehaviour
         nameRight.SetActive(true);
         #endregion
 
-
+        dialogueText.text = "";
         textBoxAnim.SetBool("isOpen", true);
         yield return new WaitForSeconds(0.4f);
         DisplayNextSentence();
@@ -166,10 +193,11 @@ public class DialogueManager : MonoBehaviour
 
     public IEnumerator DisplayNextName(Sprite name)
     {
-        
+
         Sprite prevNameLeft = nameLeftSprite.sprite;
         Sprite prevNameRight = nameRightSprite.sprite;
 
+       
         yield return new WaitForSeconds(0.1f);
         
         if (prevNameLeft == null)
@@ -225,26 +253,34 @@ public class DialogueManager : MonoBehaviour
 
     public IEnumerator EndDialogue()
     {
-        Debug.Log("ENDED");
         endText = true;
         //Enable Player controls
 
-        //Turns all Animators to off
-        yield return new WaitForSeconds(0.4f);
-        characterLeftSprite.SetBool("isOpen", false);
-        characterRightSprite.SetBool("isOpen", false);
-        nameLeftAnim.SetBool("isOpen", false);
-        nameRightAnim.SetBool("isOpen", false);
-        textBoxAnim.SetBool("isOpen", false);
 
-        yield return new WaitForSeconds(3f);
-        //Diables all GameObjects
-        BG.SetActive(false);
-        textBox.SetActive(false);
-        characterLeft.SetActive(false);
-        characterRight.SetActive(false);
-        nameLeft.SetActive(false);
-        nameRight.SetActive(false);
+        //checks if theres a prompt, if theres a prompt, you go there instead of ending
+        if (prompt)
+        { 
+            StartCoroutine(FindObjectOfType<QuestionManager>().StartQuestion(question));
+        }
+        else
+        {
+            //Turns all Animators to off
+            yield return new WaitForSeconds(0.4f);
+            characterLeftSprite.SetBool("isOpen", false);
+            characterRightSprite.SetBool("isOpen", false);
+            nameLeftAnim.SetBool("isOpen", false);
+            nameRightAnim.SetBool("isOpen", false);
+            textBoxAnim.SetBool("isOpen", false);
+
+            yield return new WaitForSeconds(3f);
+            //Diables all GameObjects
+            BG.SetActive(false);
+            textBox.SetActive(false);
+            characterLeft.SetActive(false);
+            characterRight.SetActive(false);
+            nameLeft.SetActive(false);
+            nameRight.SetActive(false);
+        }
     }
     // Update is called once per frame
     void Update()
