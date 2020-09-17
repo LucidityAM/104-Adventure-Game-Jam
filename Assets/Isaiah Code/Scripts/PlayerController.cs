@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour
             {
                 if(!Physics2D.OverlapCircle(movePoint.position + new Vector3((Input.GetAxisRaw("Horizontal") * .48f), 0f, 0f), .2f, whatStopsMovement))
                 {
-                    movePoint.position += new Vector3((Input.GetAxisRaw("Horizontal") *.48f), 0f, 0f);
+                    movePoint.position += new Vector3((Input.GetAxisRaw("Horizontal") * .48f), 0f, 0f);
                 }
             } else if (Mathf.Abs(Input.GetAxisRaw("Vertical")) == 1f)
             {
