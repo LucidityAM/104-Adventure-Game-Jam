@@ -50,26 +50,25 @@ public class PlayerController : MonoBehaviour
         {
             var relativePosition = transform.InverseTransformPoint(collision.transform.position);
 
-            if (relativePosition.x > 0)
-            {
-                Debug.Log("left");
-                collision.transform.position += new Vector3(.48f, 0f, 0f);
-            }
-            else
-            {
-                Debug.Log("right");
-                collision.transform.position += new Vector3(-.48f, 0f, 0f);
-            }
-
             if (relativePosition.y > 0)
             {
-                Debug.Log("down");
+                Debug.Log("up");
                 collision.transform.position += new Vector3(0f, .48f, 0f);
             }
-            else
+            else if (relativePosition.x > 0)
             {
-                Debug.Log("up");
+                Debug.Log("right");
+                collision.transform.position += new Vector3(.48f, 0f, 0f);
+            }
+            else if (relativePosition.y < 0)
+            {
+                Debug.Log("down");
                 collision.transform.position += new Vector3(0f, -.48f, 0f);
+            }
+            else if (relativePosition.x < 0)
+            {
+                Debug.Log("left");
+                collision.transform.position += new Vector3(-.48f, 0f, 0f);
             }
         }
     }
