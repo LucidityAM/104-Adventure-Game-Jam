@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [System.Serializable]
 public class Question
 {
-    [TextArea(3, 10)]
-    public int correctAnswer;
+    //three different options. these will also be the way to determine if you said the right answer or not
+    public string correctAnswer;
     public string option1;
     public string option2;
     public string option3;
