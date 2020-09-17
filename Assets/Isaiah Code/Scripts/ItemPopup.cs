@@ -13,7 +13,7 @@ public class ItemPopup : MonoBehaviour
 
     public PlayerController playerController;
 
-    public Object spawnedImage;
+    public GameObject spawnedImage;
 
     public Animator anim;
 
@@ -23,6 +23,7 @@ public class ItemPopup : MonoBehaviour
         {
             spawnedImage = Instantiate(popup, canvas.transform);
             playerController.enabled = false;
+            anim = spawnedImage.GetComponent<Animator>();
         }
     }
 
@@ -30,9 +31,17 @@ public class ItemPopup : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Destroy(spawnedImage);
-            playerController.enabled = true;
+            anim.SetTrigger("FadeOut");
+            StartCoroutine(Enable());
         }
+    }
+
+    public IEnumerator Enable()
+    {
+        yield return new WaitForSeconds(1.5f);
+
+        Destroy(spawnedImage);
+        playerController.enabled = true;
     }
 
 }
