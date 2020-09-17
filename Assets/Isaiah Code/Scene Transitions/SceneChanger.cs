@@ -7,7 +7,7 @@ public class SceneChanger : MonoBehaviour
 {
     public Animator anim;
 
-    private int levelToLoad;
+    public int levelToLoad;
 
 
     public void LoadLevel2or3()
