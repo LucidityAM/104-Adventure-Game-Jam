@@ -43,4 +43,34 @@ public class PlayerController : MonoBehaviour
             anim.SetBool("moving", true);
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.CompareTag("Moveable"))
+        {
+            var relativePosition = transform.InverseTransformPoint(collision.transform.position);
+
+            if (relativePosition.x > 0)
+            {
+                Debug.Log("left");
+                collision.transform.position += new Vector3(.48f, 0f, 0f);
+            }
+            else
+            {
+                Debug.Log("right");
+                collision.transform.position += new Vector3(-.48f, 0f, 0f);
+            }
+
+            if (relativePosition.y > 0)
+            {
+                Debug.Log("down");
+                collision.transform.position += new Vector3(0f, .48f, 0f);
+            }
+            else
+            {
+                Debug.Log("up");
+                collision.transform.position += new Vector3(0f, -.48f, 0f);
+            }
+        }
+    }
 }
