@@ -5,6 +5,9 @@ TextureImporter:
   - first:
       213: 4743551401421047557
     second: linesblue_0
+  - first:
+      213: -21373269913851155
+    second: linesblue_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
