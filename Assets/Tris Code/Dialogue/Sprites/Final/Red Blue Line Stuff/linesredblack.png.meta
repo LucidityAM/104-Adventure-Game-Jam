@@ -1,7 +1,61 @@
 fileFormatVersion: 2
 guid: d90033d144f91d8469622b5f0c3e6a39
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 6501022037100798028
+    second: linesredblack_0
+  - first:
+      213: -6247555509132866153
+    second: linesredblack_1
+  - first:
+      213: -5578898525958196374
+    second: linesredblack_2
+  - first:
+      213: -2748713026840898175
+    second: linesredblack_3
+  - first:
+      213: -3382538247918931145
+    second: linesredblack_4
+  - first:
+      213: 857272833335374742
+    second: linesredblack_5
+  - first:
+      213: -6378099959373121266
+    second: linesredblack_6
+  - first:
+      213: 7068396203936570220
+    second: linesredblack_7
+  - first:
+      213: -2104906027058522496
+    second: linesredblack_8
+  - first:
+      213: 5414849634961540382
+    second: linesredblack_9
+  - first:
+      213: 7588359145862898976
+    second: linesredblack_10
+  - first:
+      213: 4110739424002713458
+    second: linesredblack_11
+  - first:
+      213: -7386844828932367092
+    second: linesredblack_12
+  - first:
+      213: 6140429938941189366
+    second: linesredblack_13
+  - first:
+      213: 1350163175716504022
+    second: linesredblack_14
+  - first:
+      213: -3866887414795320103
+    second: linesredblack_15
+  - first:
+      213: -5354152858755322656
+    second: linesredblack_16
+  - first:
+      213: -3715893235623506448
+    second: linesredblack_17
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -97,7 +151,385 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: linesredblack_0
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 2292
+        width: 4482
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c40216e4915483a50800000000000000
+      internalID: 6501022037100798028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: linesredblack_1
+      rect:
+        serializedVersion: 2
+        x: 4930
+        y: 2286
+        width: 4482
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79dc99b8d593c49a0800000000000000
+      internalID: -6247555509132866153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: linesredblack_2
+      rect:
+        serializedVersion: 2
+        x: 9730
+        y: 2286
+        width: 4481
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a63bf425955c392b0800000000000000
+      internalID: -5578898525958196374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: linesredblack_3
+      rect:
+        serializedVersion: 2
+        x: 14392
+        y: 2285
+        width: 4480
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 185d8adb01c9ad9d0800000000000000
+      internalID: -2748713026840898175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: linesredblack_4
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 1751
+        width: 4481
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 733be9d826fce01d0800000000000000
+      internalID: -3382538247918931145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: linesredblack_5
+      rect:
+        serializedVersion: 2
+        x: 4913
+        y: 1788
+        width: 4479
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6933c829915a5eb00800000000000000
+      internalID: 857272833335374742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: linesredblack_6
+      rect:
+        serializedVersion: 2
+        x: 9688
+        y: 1785
+        width: 4480
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e09b1ab21ef6c77a0800000000000000
+      internalID: -6378099959373121266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: linesredblack_7
+      rect:
+        serializedVersion: 2
+        x: 14368
+        y: 1770
+        width: 4482
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6bdb53c5ecf71260800000000000000
+      internalID: 7068396203936570220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: linesredblack_8
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 1255
+        width: 4480
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0861993ee1fd9c2e0800000000000000
+      internalID: -2104906027058522496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: linesredblack_9
+      rect:
+        serializedVersion: 2
+        x: 4888
+        y: 1239
+        width: 4480
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e15490ccd09652b40800000000000000
+      internalID: 5414849634961540382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: linesredblack_10
+      rect:
+        serializedVersion: 2
+        x: 9687
+        y: 1243
+        width: 4481
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 025ae3530744f4960800000000000000
+      internalID: 7588359145862898976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: linesredblack_11
+      rect:
+        serializedVersion: 2
+        x: 14312
+        y: 1250
+        width: 4480
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27720ebf9b74c0930800000000000000
+      internalID: 4110739424002713458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: linesredblack_12
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 728
+        width: 4480
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0d1e88e3c7ac7990800000000000000
+      internalID: -7386844828932367092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: linesredblack_13
+      rect:
+        serializedVersion: 2
+        x: 4912
+        y: 728
+        width: 4480
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fc53cefe70373550800000000000000
+      internalID: 6140429938941189366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: linesredblack_14
+      rect:
+        serializedVersion: 2
+        x: 9707
+        y: 722
+        width: 4480
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d1456d314ebcb210800000000000000
+      internalID: 1350163175716504022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: linesredblack_15
+      rect:
+        serializedVersion: 2
+        x: 14356
+        y: 716
+        width: 4481
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d442b6426e065ac0800000000000000
+      internalID: -3866887414795320103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: linesredblack_16
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 278
+        width: 4479
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ec2fbca75a32b5b0800000000000000
+      internalID: -5354152858755322656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: linesredblack_17
+      rect:
+        serializedVersion: 2
+        x: 4917
+        y: 295
+        width: 4482
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fd42633ace7e6cc0800000000000000
+      internalID: -3715893235623506448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

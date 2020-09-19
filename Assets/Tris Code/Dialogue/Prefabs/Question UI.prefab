@@ -367,6 +367,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3089ce625fb15be40b12e71770e280fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  questionObject: {fileID: 9099712419260568926}
   text1: {fileID: 1575727020449515740}
   text2: {fileID: 4753959570096600438}
   text3: {fileID: 3945569631591824973}

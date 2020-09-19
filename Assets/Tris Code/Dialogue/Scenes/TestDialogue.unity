@@ -236,16 +236,16 @@ MonoBehaviour:
 
 '
     names:
-    - {fileID: 1685909237883796146, guid: 00566050d4425e7459fbce78f0e700af, type: 3}
-    - {fileID: -7187384344809326913, guid: 00566050d4425e7459fbce78f0e700af, type: 3}
-    - {fileID: 5677941658073516268, guid: 00566050d4425e7459fbce78f0e700af, type: 3}
-    - {fileID: -7565113402104737028, guid: 00566050d4425e7459fbce78f0e700af, type: 3}
+    - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
+    - {fileID: 21300000, guid: 2fa3be7cbab091240a1fa5c30e2831bb, type: 3}
+    - {fileID: 21300000, guid: 0154163aeea5a1945afeb965a6fdcd2a, type: 3}
+    - {fileID: 21300000, guid: e1f5b6a690fc9564eb71a6858e18493b, type: 3}
     sprites:
     - {fileID: 1685909237883796146, guid: 00566050d4425e7459fbce78f0e700af, type: 3}
     - {fileID: -7187384344809326913, guid: 00566050d4425e7459fbce78f0e700af, type: 3}
     - {fileID: 5677941658073516268, guid: 00566050d4425e7459fbce78f0e700af, type: 3}
     - {fileID: -7565113402104737028, guid: 00566050d4425e7459fbce78f0e700af, type: 3}
-    background: {fileID: 21300000, guid: b81f305b5763a75439a732a9a788e546, type: 3}
+    background: {fileID: 21300000, guid: b9df1993aea87774e97907cf618d4732, type: 3}
     sceneTransition: 0
     prompt: 1
     question:
@@ -258,10 +258,10 @@ MonoBehaviour:
         - you chose 1! you wouldve died if this was the real game. but thats not
           in the game yet!
         names:
-        - {fileID: -7565113402104737028, guid: 00566050d4425e7459fbce78f0e700af, type: 3}
+        - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
         sprites:
         - {fileID: 1685909237883796146, guid: 00566050d4425e7459fbce78f0e700af, type: 3}
-        background: {fileID: 21300000, guid: b81f305b5763a75439a732a9a788e546, type: 3}
+        background: {fileID: 21300000, guid: b9df1993aea87774e97907cf618d4732, type: 3}
         sceneTransition: 0
         prompt: 0
         question:
@@ -985,10 +985,10 @@ MonoBehaviour:
         - you picked option 2. congrats. you live! you would be transported to the
           next scene but.. i dont wanna code that yet
         names:
-        - {fileID: 5677941658073516268, guid: 00566050d4425e7459fbce78f0e700af, type: 3}
+        - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
         sprites:
         - {fileID: 1685909237883796146, guid: 00566050d4425e7459fbce78f0e700af, type: 3}
-        background: {fileID: 21300000, guid: b81f305b5763a75439a732a9a788e546, type: 3}
+        background: {fileID: 21300000, guid: b9df1993aea87774e97907cf618d4732, type: 3}
         sceneTransition: 0
         prompt: 0
         question:
@@ -1713,7 +1713,7 @@ MonoBehaviour:
           in the game yet!
         names: []
         sprites: []
-        background: {fileID: 0}
+        background: {fileID: 21300000, guid: b9df1993aea87774e97907cf618d4732, type: 3}
         sceneTransition: 0
         prompt: 0
         question:
@@ -2568,6 +2568,12 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &2006306607 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9099712419260568926, guid: d2b4653f367a9d843b79b99cca28f312,
+    type: 3}
+  m_PrefabInstance: {fileID: 1820303087946692347}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2032899613
 GameObject:
   m_ObjectHideFlags: 0
@@ -2910,6 +2916,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1957649667021592530, guid: d2b4653f367a9d843b79b99cca28f312,
+        type: 3}
+      propertyPath: questionObject
+      value: 
+      objectReference: {fileID: 2006306607}
     - target: {fileID: 2738859034389036612, guid: d2b4653f367a9d843b79b99cca28f312,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -3124,6 +3135,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 11.699951
       objectReference: {fileID: 0}
+    - target: {fileID: 3429074318866250034, guid: 68164500efae16c4bb23bdcfac844177,
+        type: 3}
+      propertyPath: questionObject
+      value: 
+      objectReference: {fileID: 2006306607}
     - target: {fileID: 3500500779431550485, guid: 68164500efae16c4bb23bdcfac844177,
         type: 3}
       propertyPath: m_AnchoredPosition.x

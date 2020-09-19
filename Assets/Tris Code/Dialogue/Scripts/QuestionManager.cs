@@ -7,6 +7,7 @@ using UnityEngine.EventSystems;
 public class QuestionManager : MonoBehaviour
 {
     #region Variables
+
     //So you know. In this class if i refer to variable with a number. the number corresponds to the dialogue choice. 1 being top, 2 being middle, 3 being bottom.
     public Text text1;
     public Text text2;

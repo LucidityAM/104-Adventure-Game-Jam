@@ -1,7 +1,61 @@
 fileFormatVersion: 2
 guid: 2b9c267e17db2554a8431271e46ecf8f
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 5600236109929310959
+    second: linesred_0
+  - first:
+      213: -224548791912527626
+    second: linesred_1
+  - first:
+      213: -2466170312337759435
+    second: linesred_2
+  - first:
+      213: -7143347547314341880
+    second: linesred_3
+  - first:
+      213: -4722644791298932560
+    second: linesred_4
+  - first:
+      213: 705984873260981383
+    second: linesred_5
+  - first:
+      213: 3105425806043402462
+    second: linesred_6
+  - first:
+      213: -8782446914127892527
+    second: linesred_7
+  - first:
+      213: 3667484052987022929
+    second: linesred_8
+  - first:
+      213: 5325000893206885272
+    second: linesred_9
+  - first:
+      213: 6333478530862577458
+    second: linesred_10
+  - first:
+      213: 3935869110846585054
+    second: linesred_11
+  - first:
+      213: -3895178041599233229
+    second: linesred_12
+  - first:
+      213: 5265351940495018848
+    second: linesred_13
+  - first:
+      213: -8324342907807960363
+    second: linesred_14
+  - first:
+      213: -8078678914740003279
+    second: linesred_15
+  - first:
+      213: -7273840904958588863
+    second: linesred_16
+  - first:
+      213: -1414094981647600257
+    second: linesred_17
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -97,7 +151,385 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: linesred_0
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 2292
+        width: 4482
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feae6a6121908bd40800000000000000
+      internalID: 5600236109929310959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: linesred_1
+      rect:
+        serializedVersion: 2
+        x: 4930
+        y: 2286
+        width: 4482
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f88f4f301e32ecf0800000000000000
+      internalID: -224548791912527626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: linesred_2
+      rect:
+        serializedVersion: 2
+        x: 9731
+        y: 2287
+        width: 4480
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5336e71da2766cdd0800000000000000
+      internalID: -2466170312337759435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: linesred_3
+      rect:
+        serializedVersion: 2
+        x: 14392
+        y: 2285
+        width: 4480
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 808bb27b04bbddc90800000000000000
+      internalID: -7143347547314341880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: linesred_4
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 1750
+        width: 4480
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b0474e759bc57eb0800000000000000
+      internalID: -4722644791298932560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: linesred_5
+      rect:
+        serializedVersion: 2
+        x: 4912
+        y: 1787
+        width: 4480
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78c158370892cc900800000000000000
+      internalID: 705984873260981383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: linesred_6
+      rect:
+        serializedVersion: 2
+        x: 9689
+        y: 1785
+        width: 4478
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed05c8d3150b81b20800000000000000
+      internalID: 3105425806043402462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: linesred_7
+      rect:
+        serializedVersion: 2
+        x: 14368
+        y: 1770
+        width: 4482
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1df6ea0201b7e1680800000000000000
+      internalID: -8782446914127892527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: linesred_8
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 1255
+        width: 4481
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15e83b5a05585e230800000000000000
+      internalID: 3667484052987022929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: linesred_9
+      rect:
+        serializedVersion: 2
+        x: 4888
+        y: 1239
+        width: 4482
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 893fb3c691436e940800000000000000
+      internalID: 5325000893206885272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: linesred_10
+      rect:
+        serializedVersion: 2
+        x: 9687
+        y: 1243
+        width: 4482
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23770a8ea2905e750800000000000000
+      internalID: 6333478530862577458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: linesred_11
+      rect:
+        serializedVersion: 2
+        x: 14311
+        y: 1250
+        width: 4481
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed8717a6a140f9630800000000000000
+      internalID: 3935869110846585054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: linesred_12
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 728
+        width: 4480
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 333739d653c81f9c0800000000000000
+      internalID: -3895178041599233229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: linesred_13
+      rect:
+        serializedVersion: 2
+        x: 4912
+        y: 728
+        width: 4482
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06b8e9e51b9421940800000000000000
+      internalID: 5265351940495018848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: linesred_14
+      rect:
+        serializedVersion: 2
+        x: 9706
+        y: 723
+        width: 4481
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d27097ca3ef97c80800000000000000
+      internalID: -8324342907807960363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: linesred_15
+      rect:
+        serializedVersion: 2
+        x: 14357
+        y: 716
+        width: 4481
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13edb786454c2ef80800000000000000
+      internalID: -8078678914740003279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: linesred_16
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 277
+        width: 4480
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 148cc334c302e0b90800000000000000
+      internalID: -7273840904958588863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: linesred_17
+      rect:
+        serializedVersion: 2
+        x: 4917
+        y: 295
+        width: 4483
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f757b3c3b10206ce0800000000000000
+      internalID: -1414094981647600257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

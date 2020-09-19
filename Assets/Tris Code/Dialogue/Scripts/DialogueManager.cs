@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -17,6 +18,8 @@ public class DialogueManager : MonoBehaviour
     public GameObject characterLeft;
     public GameObject characterRight;
     public GameObject BG;
+    public GameObject BlueLine;
+    public GameObject RedLine;
 
     //private variables that i dont want to be flooded in unity. Animators and Images for the Objects above
     private Animator nameLeftAnim;
@@ -24,6 +27,8 @@ public class DialogueManager : MonoBehaviour
     private Animator textBoxAnim;
     private Animator characterLeftSprite;
     private Animator characterRightSprite;
+    private Animator BlueLineAnim;
+    private Animator RedLineAnim;
     private Image nameLeftSprite;
     private Image nameRightSprite;
     private Image BGSprite;
@@ -66,7 +71,9 @@ public class DialogueManager : MonoBehaviour
         nameLeftSprite = nameLeft.GetComponent<Image>();
         nameRightSprite = nameRight.GetComponent<Image>();
         BGSprite = BG.GetComponent<Image>();
-        #endregion 
+        BlueLineAnim = BlueLine.GetComponent<Animator>();
+        RedLineAnim = RedLine.GetComponent<Animator>();
+        #endregion
 
         //Turning bools and counts to default values
         isActive = false;
@@ -97,6 +104,8 @@ public class DialogueManager : MonoBehaviour
         characterRight.SetActive(false);
         nameLeft.SetActive(false);
         nameRight.SetActive(false);
+        BlueLine.SetActive(false);
+        RedLine.SetActive(false);
 
         #endregion
 
@@ -164,11 +173,17 @@ public class DialogueManager : MonoBehaviour
         characterRight.SetActive(true);
         nameLeft.SetActive(true);
         nameRight.SetActive(true);
+        BlueLine.SetActive(true);
+        RedLine.SetActive(true);
         #endregion
 
         dialogueText.text = "";
         textBoxAnim.SetBool("isOpen", true);
-        yield return new WaitForSeconds(0.4f);
+        yield return new WaitForSeconds(0.3f);
+        BlueLineAnim.SetBool("isOpen", true);
+        yield return new WaitForSeconds(0.1f);
+        RedLineAnim.SetBool("isOpen", true);
+        yield return new WaitForSeconds(0.2f);
         DisplayNextSentence();
     }
 
@@ -202,35 +217,57 @@ public class DialogueManager : MonoBehaviour
         
         if (prevNameLeft == null)
         {
-            nameLeftSprite.sprite = name;
             nameLeftAnim.SetBool("isOpen", true);
+            nameLeftSprite.sprite = name;
             onLeftChar = true;
             onRightChar = false;
-            //enabling character anim
-            characterLeftSprite.SetBool("isOpen", true);
-            
-
+            StartCoroutine("VisualizeSpeaker");
         } else if(name == prevNameLeft && prevNameLeft != null)
         {
-            nameLeftSprite.sprite = name;
             nameLeftAnim.SetBool("isOpen", true);
+            nameLeftSprite.sprite = name;
             onLeftChar = true;
             onRightChar = false;
-
-            //enabling character anim
-            characterLeftSprite.SetBool("isOpen", true);
+            StartCoroutine("VisualizeSpeaker");
         }
-        else
+        else if(name == prevNameRight)
         {
             nameRightAnim.SetBool("isOpen", true);
             nameRightSprite.sprite = name;
             onLeftChar = false;
             onRightChar = true;
-
-            //enabling character anim
-            characterRightSprite.SetBool("isOpen", true);
+            StartCoroutine("VisualizeSpeaker");
+        }
+        else
+        {
+            nameRightAnim.SetBool("isOpen", false);
+            yield return new WaitForSeconds(0.3f);
+            nameRightAnim.SetBool("isOpen", true);
+            nameRightSprite.sprite = name;
+            onLeftChar = false;
+            onRightChar = true;
+            StartCoroutine("VisualizeSpeaker");
         }
 
+    }
+
+    public IEnumerator VisualizeSpeaker()
+    {
+        if (onLeftChar)
+        {
+            characterLeftSprite.SetBool("isOpen", false);
+            yield return new WaitForSeconds(0.3f);
+            characterLeftSprite.SetBool("isOpen", true);
+            BlueLineAnim.Play("BlueLineActive");
+            RedLineAnim.Play("RedLineInactive");
+        } else if (onRightChar)
+        {
+            characterRightSprite.SetBool("isOpen", false);
+            yield return new WaitForSeconds(0.3f);
+            characterRightSprite.SetBool("isOpen", true);
+            RedLineAnim.Play("RedLineActive");
+            BlueLineAnim.Play("BlueLineInactive");
+        }
     }
 
     public IEnumerator TypeSentence(string sentence)
@@ -259,18 +296,24 @@ public class DialogueManager : MonoBehaviour
 
         //checks if theres a prompt, if theres a prompt, you go there instead of ending
         if (prompt)
-        { 
+        {
             StartCoroutine(FindObjectOfType<QuestionManager>().StartQuestion(question));
         }
         else
         {
+            #region gross
             //Turns all Animators to off
             yield return new WaitForSeconds(0.4f);
             characterLeftSprite.SetBool("isOpen", false);
             characterRightSprite.SetBool("isOpen", false);
+            yield return new WaitForSeconds(0.3f);
             nameLeftAnim.SetBool("isOpen", false);
             nameRightAnim.SetBool("isOpen", false);
+            yield return new WaitForSeconds(0.3f);
             textBoxAnim.SetBool("isOpen", false);
+            yield return new WaitForSeconds(0.3f);
+            BlueLineAnim.SetBool("isOpen", false);
+            RedLineAnim.SetBool("isOpen", false);
 
             yield return new WaitForSeconds(3f);
             //Diables all GameObjects
@@ -280,6 +323,9 @@ public class DialogueManager : MonoBehaviour
             characterRight.SetActive(false);
             nameLeft.SetActive(false);
             nameRight.SetActive(false);
+            BlueLine.SetActive(false);
+            RedLine.SetActive(false);
+            #endregion
         }
     }
     // Update is called once per frame
