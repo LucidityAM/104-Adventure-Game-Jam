@@ -15,6 +15,7 @@ public class DialogueManager : MonoBehaviour
     public GameObject nameLeft;
     public GameObject nameRight;
     public GameObject textBox;
+    public GameObject chapterBox;
     public GameObject characterLeft;
     public GameObject characterRight;
     public GameObject BG;
@@ -25,6 +26,7 @@ public class DialogueManager : MonoBehaviour
     private Animator nameLeftAnim;
     private Animator nameRightAnim;
     private Animator textBoxAnim;
+    private Animator chapterBoxAnim;
     private Animator characterLeftSprite;
     private Animator characterRightSprite;
     private Animator BlueLineAnim;
@@ -66,6 +68,7 @@ public class DialogueManager : MonoBehaviour
         nameLeftAnim = nameLeft.GetComponent<Animator>();
         nameRightAnim = nameRight.GetComponent<Animator>();
         textBoxAnim = textBox.GetComponent<Animator>();
+        chapterBoxAnim = chapterBox.GetComponent<Animator>();
         characterLeftSprite = characterLeft.GetComponent<Animator>();
         characterRightSprite = characterRight.GetComponent<Animator>();
         nameLeftSprite = nameLeft.GetComponent<Image>();
@@ -92,11 +95,6 @@ public class DialogueManager : MonoBehaviour
 
         //Turning off everything
         #region turning off variables
-        //characterLeftSprite.SetBool("isOpen", false);
-        //characterRightSprite.SetBool("isOpen", false);
-        //nameLeftAnim.SetBool("isOpen", false);
-        //nameRightAnim.SetBool("isOpen", false);
-        //textBoxAnim.SetBool("isOpen", false);
 
         BG.SetActive(false);
         textBox.SetActive(false);
@@ -119,9 +117,12 @@ public class DialogueManager : MonoBehaviour
         characterRightSprite.SetBool("isOpen", false);
         nameLeftAnim.SetBool("isOpen", false);
         nameRightAnim.SetBool("isOpen", false);
+        BlueLineAnim.SetBool("isOpen", false);
+        RedLineAnim.SetBool("isOpen", false);
 
         BG.SetActive(false);
         textBox.SetActive(false);
+        chapterBox.SetActive(false);
         characterLeft.SetActive(false);
         characterRight.SetActive(false);
         nameLeft.SetActive(false);
@@ -169,6 +170,7 @@ public class DialogueManager : MonoBehaviour
         #region enabling components
         BG.SetActive(true);
         textBox.SetActive(true);
+        chapterBox.SetActive(true);
         characterLeft.SetActive(true);
         characterRight.SetActive(true);
         nameLeft.SetActive(true);
@@ -184,6 +186,7 @@ public class DialogueManager : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         RedLineAnim.SetBool("isOpen", true);
         yield return new WaitForSeconds(0.2f);
+        chapterBoxAnim.SetBool("isOpen", true);
         DisplayNextSentence();
     }
 
@@ -206,7 +209,7 @@ public class DialogueManager : MonoBehaviour
 
     }
 
-    public IEnumerator DisplayNextName(Sprite name)
+    public IEnumerator DisplayNextName(Sprite name) 
     {
 
         Sprite prevNameLeft = nameLeftSprite.sprite;
@@ -218,14 +221,18 @@ public class DialogueManager : MonoBehaviour
         if (prevNameLeft == null)
         {
             nameLeftAnim.SetBool("isOpen", true);
+            nameLeftSprite.color = new Color(1f, 1f, 1f, 1f);
             nameLeftSprite.sprite = name;
+            nameRightSprite.color = new Color(.5f, .5f, .5f, 1f);
             onLeftChar = true;
             onRightChar = false;
             StartCoroutine("VisualizeSpeaker");
         } else if(name == prevNameLeft && prevNameLeft != null)
         {
             nameLeftAnim.SetBool("isOpen", true);
+            nameLeftSprite.color = new Color(1f, 1f, 1f, 1f);
             nameLeftSprite.sprite = name;
+            nameRightSprite.color = new Color(.5f, .5f, .5f, 1f);
             onLeftChar = true;
             onRightChar = false;
             StartCoroutine("VisualizeSpeaker");
@@ -233,7 +240,9 @@ public class DialogueManager : MonoBehaviour
         else if(name == prevNameRight)
         {
             nameRightAnim.SetBool("isOpen", true);
+            nameRightSprite.color = new Color(1f, 1f, 1f, 1f);
             nameRightSprite.sprite = name;
+            nameLeftSprite.color = new Color(.5f, .5f, .5f, 1f);
             onLeftChar = false;
             onRightChar = true;
             StartCoroutine("VisualizeSpeaker");
@@ -243,7 +252,9 @@ public class DialogueManager : MonoBehaviour
             nameRightAnim.SetBool("isOpen", false);
             yield return new WaitForSeconds(0.3f);
             nameRightAnim.SetBool("isOpen", true);
+            nameRightSprite.color = new Color(1f, 1f, 1f, 1f);
             nameRightSprite.sprite = name;
+            nameLeftSprite.color = new Color(.5f, .5f, .5f, 1f);
             onLeftChar = false;
             onRightChar = true;
             StartCoroutine("VisualizeSpeaker");
@@ -311,14 +322,19 @@ public class DialogueManager : MonoBehaviour
             nameRightAnim.SetBool("isOpen", false);
             yield return new WaitForSeconds(0.3f);
             textBoxAnim.SetBool("isOpen", false);
-            yield return new WaitForSeconds(0.3f);
+            yield return new WaitForSeconds(0.1f);
+            chapterBoxAnim.SetBool("isOpen", false);
+            BlueLineAnim.Play("BlueLineOpen");
+            RedLineAnim.Play("RedLineOpen");
             BlueLineAnim.SetBool("isOpen", false);
+            yield return new WaitForSeconds(0.2f);
             RedLineAnim.SetBool("isOpen", false);
 
             yield return new WaitForSeconds(3f);
             //Diables all GameObjects
             BG.SetActive(false);
             textBox.SetActive(false);
+            chapterBox.SetActive(false);
             characterLeft.SetActive(false);
             characterRight.SetActive(false);
             nameLeft.SetActive(false);
@@ -331,6 +347,6 @@ public class DialogueManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
