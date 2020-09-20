@@ -55,6 +55,11 @@ public class PlayerController : MonoBehaviour
                 Debug.Log("up");
                 collision.transform.position += new Vector3(0f, .48f, 0f);
             }
+            else if (relativePosition.x < 0)
+            {
+                Debug.Log("left");
+                collision.transform.position += new Vector3(-.48f, 0f, 0f);
+            }
             else if (relativePosition.x > 0)
             {
                 Debug.Log("right");
@@ -65,11 +70,7 @@ public class PlayerController : MonoBehaviour
                 Debug.Log("down");
                 collision.transform.position += new Vector3(0f, -.48f, 0f);
             }
-            else if (relativePosition.x < 0)
-            {
-                Debug.Log("left");
-                collision.transform.position += new Vector3(-.48f, 0f, 0f);
-            }
+           
         }
     }
 }
