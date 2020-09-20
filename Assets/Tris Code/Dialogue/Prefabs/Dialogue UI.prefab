@@ -162,6 +162,7 @@ MonoBehaviour:
   BG: {fileID: 1793973190141449773}
   BlueLine: {fileID: 1377875482160759959}
   RedLine: {fileID: 4677563934294926872}
+  questionObject: {fileID: 0}
 --- !u!1 &1162054748869326077
 GameObject:
   m_ObjectHideFlags: 0
@@ -274,9 +275,9 @@ RectTransform:
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -257.875}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.12669793, y: 1}
-  m_AnchoredPosition: {x: -160.5, y: 369}
-  m_SizeDelta: {x: 4426.0845, y: -2047.9648}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -1837, y: 369.5}
+  m_SizeDelta: {x: 1069.0845, y: -2046.9648}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8431900943339982097
 CanvasRenderer:
@@ -370,7 +371,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.07730209, y: 0.296}
   m_AnchorMax: {x: 0.3186146, y: 0.9250001}
-  m_AnchoredPosition: {x: -6.1728516, y: 2.540039}
+  m_AnchoredPosition: {x: -6.171875, y: 2.540039}
   m_SizeDelta: {x: 12.346313, y: 0.9194336}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4616134222597174171
@@ -744,10 +745,10 @@ RectTransform:
   m_Father: {fileID: 8835212512728503752}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 257.38898}
-  m_AnchorMin: {x: 0.87460417, y: 0}
+  m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 179.5, y: 401}
-  m_SizeDelta: {x: 4740.0425, y: -2047.9648}
+  m_AnchoredPosition: {x: 1859, y: 401.5}
+  m_SizeDelta: {x: 1381.0425, y: -2048.9648}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8323063330364243278
 CanvasRenderer:

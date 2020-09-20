@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
+using UnityEditorInternal;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -46,6 +47,8 @@ public class DialogueManager : MonoBehaviour
     //private question to trigger a question at the end of dialogue
     private Question question;
 
+    //Entire Question Object
+    public GameObject questionObject;
 
     //Making instance of the DialogueManager, so it can be reapplied
     public static DialogueManager Instance;
@@ -95,16 +98,15 @@ public class DialogueManager : MonoBehaviour
 
         //Turning off everything
         #region turning off variables
-
         BG.SetActive(false);
         textBox.SetActive(false);
+        chapterBox.SetActive(false);
         characterLeft.SetActive(false);
         characterRight.SetActive(false);
         nameLeft.SetActive(false);
         nameRight.SetActive(false);
         BlueLine.SetActive(false);
         RedLine.SetActive(false);
-
         #endregion
 
     }
@@ -155,6 +157,7 @@ public class DialogueManager : MonoBehaviour
             names.Enqueue(name);
         }
         //SPRITES
+        sprites.Clear();
         foreach (Sprite sprite in dialogue.sprites)
         {
             sprites.Enqueue(sprite);
@@ -185,15 +188,17 @@ public class DialogueManager : MonoBehaviour
         BlueLineAnim.SetBool("isOpen", true);
         yield return new WaitForSeconds(0.1f);
         RedLineAnim.SetBool("isOpen", true);
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.4f);
         chapterBoxAnim.SetBool("isOpen", true);
         DisplayNextSentence();
     }
 
     public void DisplayNextSentence()
     {
+        BlueLineAnim.SetBool("isOpen", true);
+        RedLineAnim.SetBool("isOpen", true);
         //Ends Dialogue if count of sentances reaches 0
-        if(sentences.Count <= 0)
+        if (sentences.Count <= 0)
         {
             StartCoroutine("EndDialogue");
             return;
@@ -211,12 +216,8 @@ public class DialogueManager : MonoBehaviour
 
     public IEnumerator DisplayNextName(Sprite name) 
     {
-
         Sprite prevNameLeft = nameLeftSprite.sprite;
         Sprite prevNameRight = nameRightSprite.sprite;
-
-       
-        yield return new WaitForSeconds(0.1f);
         
         if (prevNameLeft == null)
         {
@@ -267,24 +268,27 @@ public class DialogueManager : MonoBehaviour
         if (onLeftChar)
         {
             characterLeftSprite.SetBool("isOpen", false);
-            yield return new WaitForSeconds(0.3f);
             characterLeftSprite.SetBool("isOpen", true);
+            yield return new WaitForSeconds(0.3f);
             BlueLineAnim.Play("BlueLineActive");
             RedLineAnim.Play("RedLineInactive");
+            BlueLineAnim.SetBool("isOpen", true);
+            RedLineAnim.SetBool("isOpen", true);
+
         } else if (onRightChar)
         {
             characterRightSprite.SetBool("isOpen", false);
-            yield return new WaitForSeconds(0.3f);
             characterRightSprite.SetBool("isOpen", true);
+            yield return new WaitForSeconds(0.3f);
             RedLineAnim.Play("RedLineActive");
             BlueLineAnim.Play("BlueLineInactive");
+            BlueLineAnim.SetBool("isOpen", true);
+            RedLineAnim.SetBool("isOpen", true);
         }
     }
 
     public IEnumerator TypeSentence(string sentence)
     {
-
-
         dialogueText.text = "";
         //typing each word letter for letter
         foreach (char letter in sentence.ToCharArray())
@@ -300,7 +304,7 @@ public class DialogueManager : MonoBehaviour
     }
 
     public IEnumerator EndDialogue()
-    {
+    { 
         endText = true;
         //Enable Player controls
 
@@ -324,13 +328,11 @@ public class DialogueManager : MonoBehaviour
             textBoxAnim.SetBool("isOpen", false);
             yield return new WaitForSeconds(0.1f);
             chapterBoxAnim.SetBool("isOpen", false);
-            BlueLineAnim.Play("BlueLineOpen");
-            RedLineAnim.Play("RedLineOpen");
             BlueLineAnim.SetBool("isOpen", false);
-            yield return new WaitForSeconds(0.2f);
+            //yield return new WaitForSeconds(0.05f);
             RedLineAnim.SetBool("isOpen", false);
 
-            yield return new WaitForSeconds(3f);
+            yield return new WaitForSeconds(2f);
             //Diables all GameObjects
             BG.SetActive(false);
             textBox.SetActive(false);
@@ -344,9 +346,10 @@ public class DialogueManager : MonoBehaviour
             #endregion
         }
     }
+
     // Update is called once per frame
     void Update()
     {
-
+      
     }
 }
