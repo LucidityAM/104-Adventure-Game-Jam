@@ -292,10 +292,10 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 0154163aeea5a1945afeb965a6fdcd2a, type: 3}
     - {fileID: 21300000, guid: e1f5b6a690fc9564eb71a6858e18493b, type: 3}
     sprites:
-    - {fileID: 1685909237883796146, guid: 00566050d4425e7459fbce78f0e700af, type: 3}
-    - {fileID: -7187384344809326913, guid: 00566050d4425e7459fbce78f0e700af, type: 3}
-    - {fileID: 5677941658073516268, guid: 00566050d4425e7459fbce78f0e700af, type: 3}
-    - {fileID: -7565113402104737028, guid: 00566050d4425e7459fbce78f0e700af, type: 3}
+    - EmmieAnnoyed
+    - 
+    - 
+    - 
     background: {fileID: 21300000, guid: b9df1993aea87774e97907cf618d4732, type: 3}
     sceneTransition: 0
     prompt: 1
@@ -311,7 +311,7 @@ MonoBehaviour:
         names:
         - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
         sprites:
-        - {fileID: 1685909237883796146, guid: 00566050d4425e7459fbce78f0e700af, type: 3}
+        - 
         background: {fileID: 21300000, guid: b9df1993aea87774e97907cf618d4732, type: 3}
         sceneTransition: 0
         prompt: 0
@@ -1038,7 +1038,7 @@ MonoBehaviour:
         names:
         - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
         sprites:
-        - {fileID: 1685909237883796146, guid: 00566050d4425e7459fbce78f0e700af, type: 3}
+        - 
         background: {fileID: 21300000, guid: b9df1993aea87774e97907cf618d4732, type: 3}
         sceneTransition: 0
         prompt: 0
@@ -3149,7 +3149,7 @@ PrefabInstance:
     - target: {fileID: 395769487141482975, guid: 68164500efae16c4bb23bdcfac844177,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1884833372387336334, guid: 68164500efae16c4bb23bdcfac844177,
         type: 3}
@@ -3179,7 +3179,7 @@ PrefabInstance:
     - target: {fileID: 2568524310869901859, guid: 68164500efae16c4bb23bdcfac844177,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -2.699707
+      value: -2.7001953
       objectReference: {fileID: 0}
     - target: {fileID: 2643847831689511115, guid: 68164500efae16c4bb23bdcfac844177,
         type: 3}
@@ -3269,12 +3269,12 @@ PrefabInstance:
     - target: {fileID: 5109153076822456039, guid: 68164500efae16c4bb23bdcfac844177,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1.0297852
+      value: 1.0302734
       objectReference: {fileID: 0}
     - target: {fileID: 5109153076822456039, guid: 68164500efae16c4bb23bdcfac844177,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5378615977509531985, guid: 68164500efae16c4bb23bdcfac844177,
         type: 3}
