@@ -40,7 +40,7 @@ public class UIControll : MonoBehaviour
                 break;
         }
 
-        if (isDead)
+        if (isDead || Input.GetKeyDown(KeyCode.R))
         {
             string currentScene;
 
