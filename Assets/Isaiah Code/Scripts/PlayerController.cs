@@ -23,6 +23,8 @@ public class PlayerController : MonoBehaviour
 
         horMove = true;
         vertMove = true;
+
+        MoveNumber.moveCount = 30;
     }
 
     // Update is called once per frame
@@ -137,6 +139,8 @@ public class PlayerController : MonoBehaviour
 
     public IEnumerator MoveCooldownHorizontal()
     {
+        MoveNumber.moveCount -= 1;
+
         yield return new WaitForSeconds(.3f);
 
         horMove = true;
@@ -146,6 +150,8 @@ public class PlayerController : MonoBehaviour
 
     public IEnumerator MoveCooldownVertical()
     {
+        MoveNumber.moveCount -= 1;
+
         yield return new WaitForSeconds(.3f);
 
         vertMove = true;
