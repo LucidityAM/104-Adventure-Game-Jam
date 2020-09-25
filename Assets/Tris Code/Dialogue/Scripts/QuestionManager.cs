@@ -26,7 +26,11 @@ public class QuestionManager : MonoBehaviour
 
     //Grabbing GameObjects and variables of the epic slide in option sprite
     public GameObject promptSprite;
+    public GameObject promptEmmie;
+    public GameObject promptLine;
     private Animator promptSpriteAnim;
+    private Animator promptEmmieAnim;
+    private Animator promptLineAnim;
 
     //Shader square to make everyting other than your options dark
     public GameObject shade;
@@ -70,6 +74,8 @@ public class QuestionManager : MonoBehaviour
         button3Anim = button3.GetComponent<Animator>();
         //promptSprite variables
         promptSpriteAnim = promptSprite.GetComponent<Animator>();
+        promptEmmieAnim = promptEmmie.GetComponent<Animator>();
+        promptLineAnim = promptLine.GetComponent<Animator>();
         shadeAnim = shade.GetComponent<Animator>();
 
         //turning off all variables that need to be turned off
@@ -79,6 +85,8 @@ public class QuestionManager : MonoBehaviour
         button3.SetActive(false);
         //prompt and shade
         promptSprite.SetActive(false);
+        promptEmmie.SetActive(false);
+        promptLine.SetActive(false);
         shade.SetActive(false);
 
 
@@ -97,16 +105,17 @@ public class QuestionManager : MonoBehaviour
         //turning all gameobjects on
         shade.SetActive(true);
         promptSprite.SetActive(true);
-        button1.SetActive(true);
-        button2.SetActive(true);
-        button3.SetActive(true);
+        promptLine.SetActive(true);
+        promptEmmie.SetActive(true);
 
         //turn all animators to open yield return new waitforseconds are used for stylistic timing
         shadeAnim.SetBool("isOpen", true);
         yield return new WaitForSeconds(0.2f);
         promptSprite.SetActive(true);
         promptSpriteAnim.SetBool("isOpen", true);
+        promptLineAnim.SetBool("isOpen", true);
         yield return new WaitForSeconds(0.4f);
+        promptEmmieAnim.SetBool("isOpen", true);
         StartCoroutine("DisplayOptions");
     }
 
@@ -119,10 +128,10 @@ public class QuestionManager : MonoBehaviour
         text2.text = option2;
         text3.text = option3;
         button1Anim.SetBool("isOpen", true);
-        yield return new WaitForSeconds(0.3f);
         button2Anim.SetBool("isOpen", true);
-        yield return new WaitForSeconds(0.3f);
         button3Anim.SetBool("isOpen", true);
+
+        yield return new WaitForSeconds(0.3f);
     }
 
     //public void DisplayNextEvent()
@@ -157,12 +166,16 @@ public class QuestionManager : MonoBehaviour
         button2Anim.SetBool("isOpen", false);
         button3Anim.SetBool("isOpen", false);
         promptSpriteAnim.SetBool("isOpen", false);
+        promptLineAnim.SetBool("isOpen", false);
+        promptEmmieAnim.SetBool("isOpen", false);
         shadeAnim.SetBool("isOpen", false);
 
         button1.SetActive(false);
         button2.SetActive(false);
         button3.SetActive(false);
         promptSprite.SetActive(false);
+        promptEmmie.SetActive(false);
+        promptLine.SetActive(false);
         shade.SetActive(false);
 
     }
