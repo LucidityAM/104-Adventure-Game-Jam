@@ -39,7 +39,7 @@ public class DialogueManager : MonoBehaviour
     //Queue for names and sentances.
     private Queue<string> sentences;
     private Queue<Sprite> names;
-    private Queue<Sprite> sprites;
+    private Queue<string> sprites;
 
     //Player access for preventing movement
 
@@ -94,7 +94,7 @@ public class DialogueManager : MonoBehaviour
         //Resetting Queues
         sentences = new Queue<string>();
         names = new Queue<Sprite>();
-        sprites = new Queue<Sprite>();
+        sprites = new Queue<string>();
 
         //Turning off everything
         #region turning off variables
@@ -158,7 +158,7 @@ public class DialogueManager : MonoBehaviour
         }
         //SPRITES
         sprites.Clear();
-        foreach (Sprite sprite in dialogue.sprites)
+        foreach (string sprite in dialogue.sprites)
         {
             sprites.Enqueue(sprite);
         }
@@ -267,7 +267,11 @@ public class DialogueManager : MonoBehaviour
     {
         if (onLeftChar)
         {
+            characterRightSprite.enabled = false;
+            characterLeftSprite.enabled = true;
             characterLeftSprite.SetBool("isOpen", false);
+            yield return new WaitForSeconds(0.4f);
+            characterLeftSprite.Play(sprites.Dequeue());
             characterLeftSprite.SetBool("isOpen", true);
             yield return new WaitForSeconds(0.3f);
             BlueLineAnim.Play("BlueLineActive");
@@ -277,7 +281,11 @@ public class DialogueManager : MonoBehaviour
 
         } else if (onRightChar)
         {
+            characterLeftSprite.enabled = false;
+            characterRightSprite.enabled = true;
             characterRightSprite.SetBool("isOpen", false);
+            yield return new WaitForSeconds(0.4f);
+            characterRightSprite.Play(sprites.Dequeue());
             characterRightSprite.SetBool("isOpen", true);
             yield return new WaitForSeconds(0.3f);
             RedLineAnim.Play("RedLineActive");

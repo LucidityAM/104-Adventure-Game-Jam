@@ -195,10 +195,10 @@ RectTransform:
   m_Father: {fileID: 2568524310869901859}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 9.410011, y: 4.4908266}
-  m_SizeDelta: {x: 2384.831, y: 562.68567}
+  m_AnchorMin: {x: 0.074532196, y: 0.08482319}
+  m_AnchorMax: {x: 0.95000005, y: 0.867561}
+  m_AnchoredPosition: {x: -0.36999512, y: 0.22000122}
+  m_SizeDelta: {x: 2602.2295, y: 600.38574}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8567480503492612765
 CanvasRenderer:
@@ -228,7 +228,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: a86e9d9c9347b8847b6d1cb44341e823, type: 3}
     m_FontSize: 100
     m_FontStyle: 0
     m_BestFit: 0
@@ -240,7 +240,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'TEST TEST TEST FOR FORT FORT FORT '
+  m_Text: "You are all a part of me, and whether or not we agree all the time doesn\u2019t
+    matter. I love and accept you for who you are, and who I am. But...maybe it\u2019s
+    time we move on from this place, okay?"
 --- !u!1 &1377875482160759959
 GameObject:
   m_ObjectHideFlags: 0

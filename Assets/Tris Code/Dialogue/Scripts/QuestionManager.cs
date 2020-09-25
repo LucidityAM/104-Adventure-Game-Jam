@@ -121,7 +121,6 @@ public class QuestionManager : MonoBehaviour
 
     public IEnumerator DisplayOptions()
     {
-        Debug.Log("true");
         button1.SetActive(true);
         button2.SetActive(true);
         button3.SetActive(true);

@@ -12,7 +12,7 @@ public class Dialogue
     public Sprite[] names;
 
     //different expression sprites and backgrounds
-    public Sprite[] sprites;
+    public string[] sprites;
     public Sprite background;
 
     //checking if its gonna send you to another scene and stuff
