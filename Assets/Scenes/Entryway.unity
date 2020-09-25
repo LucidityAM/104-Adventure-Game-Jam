@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -739,7 +739,7 @@ Transform:
   m_LocalScale: {x: 1.9630791, y: 10.877291, z: 1}
   m_Children: []
   m_Father: {fileID: 5080315998688607451}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &291015406
 MonoBehaviour:
@@ -1192,7 +1192,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5080315998688607451}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!483693784 &396443422
 TilemapRenderer:
@@ -5616,7 +5616,7 @@ Transform:
   m_LocalScale: {x: 78.19, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5080315998688607451}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &993225941
 BoxCollider2D:
@@ -5832,7 +5832,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5080315998347500739}
-  - {fileID: 5080315998793351368}
   - {fileID: 2110659601}
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -7091,7 +7090,7 @@ Transform:
   - {fileID: 2060052689}
   - {fileID: 275708783}
   m_Father: {fileID: 1304562056}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1179563408682845696
 MonoBehaviour:
@@ -8112,6 +8111,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 622181859}
+  - {fileID: 5080315998793351368}
   - {fileID: 396443421}
   - {fileID: 993225940}
   - {fileID: 291015405}
@@ -8126,10 +8126,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5080315998793351369}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.1428846, y: -0.16757047, z: 1.6782227}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1304562056}
+  m_Father: {fileID: 5080315998688607451}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5080315998793351369
@@ -8149,7 +8149,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1839735485 &5080315998793351370
 Tilemap:
   m_ObjectHideFlags: 0
