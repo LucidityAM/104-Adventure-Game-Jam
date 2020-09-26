@@ -28,7 +28,7 @@ public class Interactables : MonoBehaviour
             }
             else if (relativePosition.y < 0)
             {
-                collision.transform.position += new Vector3(0f, -1.44f, 0f);
+                collision.transform.position += new Vector3(0f, -.72f, 0f);
             }
         }
     }
