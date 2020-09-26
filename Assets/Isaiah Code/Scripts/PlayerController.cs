@@ -17,6 +17,8 @@ public class PlayerController : MonoBehaviour
     private bool vertMove;
     private bool horMove;
 
+    public int moveNumberForScene;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +27,7 @@ public class PlayerController : MonoBehaviour
         horMove = true;
         vertMove = true;
 
-        MoveNumber.moveCount = 30;
+        MoveNumber.moveCount = moveNumberForScene;
     }
 
     // Update is called once per frame
