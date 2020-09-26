@@ -57,6 +57,7 @@ public class DialogueManager : MonoBehaviour
     private bool isActive; //Checks if dialogue is on or not
     private bool endText; //if on will keep the text off constantly
     private bool sceneTransition; //if on will go to a marked scene once the dialogue is over
+    private string sceneName;
     private bool onLeftChar; //checking if the current sentence is the left character speaking
     private bool onRightChar; //checking if the current sentence is the right character speaking 
     private bool prompt; //if prompt is on. ending the dialogue will lead to a question
@@ -143,6 +144,7 @@ public class DialogueManager : MonoBehaviour
 
         //Setting all the bools that need to be set equal to their counterpart in dialogue
         sceneTransition = dialogue.sceneTransition;
+        sceneName = dialogue.sceneName;
         prompt = dialogue.prompt;
         question = dialogue.question;
 
@@ -354,6 +356,11 @@ public class DialogueManager : MonoBehaviour
             BlueLine.SetActive(false);
             RedLine.SetActive(false);
             #endregion
+
+            if(sceneTransition == true)
+            {
+                FindObjectOfType<LoadingScene>().LoadSceneLevel(sceneName);
+            }
         }
     }
 

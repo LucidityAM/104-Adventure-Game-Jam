@@ -17,6 +17,7 @@ public class Dialogue
 
     //checking if its gonna send you to another scene and stuff
     public bool sceneTransition;
+    public string sceneName;
     public bool prompt;
     public Question question;
 }
