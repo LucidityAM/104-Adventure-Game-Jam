@@ -9,21 +9,27 @@ public class ItemPopup : MonoBehaviour
 {
     public GameObject popup;
 
-    public Canvas canvas;
+    public Sprite imageToAppear;
 
     public PlayerController playerController;
 
-    public GameObject spawnedImage;
+    private Animator anim;
 
-    public Animator anim;
+    public void Start()
+    {
+        anim = popup.GetComponent<Animator>();
+        popup.SetActive(false);
+    }
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            spawnedImage = Instantiate(popup, canvas.transform);
+            popup.SetActive(true);
+
+            popup.GetComponent<Image>().sprite = imageToAppear;
+
             playerController.enabled = false;
-            anim = spawnedImage.GetComponent<Animator>();
         }
     }
 
@@ -40,7 +46,7 @@ public class ItemPopup : MonoBehaviour
     {
         yield return new WaitForSeconds(1.5f);
 
-        Destroy(spawnedImage);
+        popup.SetActive(false);
         playerController.enabled = true;
     }
 
