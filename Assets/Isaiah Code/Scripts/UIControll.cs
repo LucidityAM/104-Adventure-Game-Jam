@@ -40,11 +40,8 @@ public class UIControll : MonoBehaviour
                 break;
         }
 
-<<<<<<< HEAD
         if (isDead || Input.GetKeyDown(KeyCode.R))
-=======
         if (isDead)
->>>>>>> e6d57d42317b14f3dc66fe2ee7993341476a3c0e
         {
             string currentScene;
 
