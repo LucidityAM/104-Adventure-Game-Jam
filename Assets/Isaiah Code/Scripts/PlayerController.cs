@@ -87,8 +87,14 @@ public class PlayerController : MonoBehaviour
             if (relativePosition.y > 0)
             {
                 Debug.Log("up");
+<<<<<<< HEAD
                 if (!Physics2D.OverlapCircle(collision.transform.position + new Vector3(0f, (Input.GetAxisRaw("Vertical") * .72f), 0f), .5f, whatStopsMovement) &&
                 !Physics2D.OverlapCircle(collision.transform.position + new Vector3(0f, (Input.GetAxisRaw("Vertical") * .72f), 0f), .4f, moveableObjects))
+=======
+                collision.transform.position += new Vector3(0f, .72f, 0f);
+
+                if (!Physics2D.OverlapCircle(collision.transform.position + new Vector3(0f, (Input.GetAxisRaw("Vertical") * .72f), 0f), .5f, whatStopsMovement))
+>>>>>>> e6d57d42317b14f3dc66fe2ee7993341476a3c0e
                 {
                     collision.transform.position += new Vector3(0f, .72f, 0f);
                 }
@@ -102,8 +108,14 @@ public class PlayerController : MonoBehaviour
                 if (relativePosition.x < 0)
                 {
                     Debug.Log("left");
+<<<<<<< HEAD
                     if (!Physics2D.OverlapCircle(movePoint.position + new Vector3((Input.GetAxisRaw("Horizontal") * .72f), 0f, 0f), 1.6f, whatStopsMovement) &&
                     !Physics2D.OverlapCircle(movePoint.position + new Vector3((Input.GetAxisRaw("Horizontal") * .72f), 0f, 0f), .4f, moveableObjects))
+=======
+                    collision.transform.position += new Vector3(-.72f, 0f, 0f);
+
+                    if (!Physics2D.OverlapCircle(movePoint.position + new Vector3((Input.GetAxisRaw("Horizontal") * .72f), 0f, 0f), 1.6f, whatStopsMovement))
+>>>>>>> e6d57d42317b14f3dc66fe2ee7993341476a3c0e
                     {
                         collision.transform.position += new Vector3(-.72f, 0f, 0f);
                     }
@@ -111,12 +123,23 @@ public class PlayerController : MonoBehaviour
                     {
                         movePoint.transform.position += new Vector3(.72f, 0f, 0f);
                     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> e6d57d42317b14f3dc66fe2ee7993341476a3c0e
                 }
                 else if (relativePosition.x > 0)
                 {
                     Debug.Log("right");
+<<<<<<< HEAD
                     if (!Physics2D.OverlapCircle(movePoint.position + new Vector3((Input.GetAxisRaw("Horizontal") * .72f), 0f, 0f), 1.6f, whatStopsMovement) &&
                     !Physics2D.OverlapCircle(movePoint.position + new Vector3((Input.GetAxisRaw("Horizontal") * .72f), 0f, 0f), .4f, moveableObjects))
+=======
+
+                    collision.transform.position += new Vector3(.72f, 0f, 0f);
+
+                    if (!Physics2D.OverlapCircle(movePoint.position + new Vector3((Input.GetAxisRaw("Horizontal") * .72f), 0f, 0f), 1.6f, whatStopsMovement))
+>>>>>>> e6d57d42317b14f3dc66fe2ee7993341476a3c0e
                     {
                         collision.transform.position += new Vector3(.72f, 0f, 0f);
                     }
@@ -124,13 +147,24 @@ public class PlayerController : MonoBehaviour
                     {
                         movePoint.transform.position += new Vector3(-.72f, 0f, 0f);
                     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> e6d57d42317b14f3dc66fe2ee7993341476a3c0e
                 }
             }
             else if (relativePosition.y < 0)
             {
                 Debug.Log("down");
+<<<<<<< HEAD
                 if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, (Input.GetAxisRaw("Vertical") * .72f), 0f), .5f, whatStopsMovement) &&
                 !Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, (Input.GetAxisRaw("Vertical") * .72f), 0f), .4f, moveableObjects))
+=======
+
+                collision.transform.position += new Vector3(0f, -.72f, 0f);
+
+                if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, (Input.GetAxisRaw("Vertical") * .72f), 0f), .5f, whatStopsMovement))
+>>>>>>> e6d57d42317b14f3dc66fe2ee7993341476a3c0e
                 {
                     collision.transform.position += new Vector3(0f, -.72f, 0f);
                 }
@@ -138,6 +172,10 @@ public class PlayerController : MonoBehaviour
                 {
                     movePoint.transform.position += new Vector3(0f, .72f, 0f);
                 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> e6d57d42317b14f3dc66fe2ee7993341476a3c0e
             }
         } //Checks where the player is in relationship to the moveable object and then moves the object accordingly
     }

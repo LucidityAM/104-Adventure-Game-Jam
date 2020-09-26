@@ -7,6 +7,7 @@ public class MoveableCollision : MonoBehaviour
     public GameObject Player;
     private void OnCollisionEnter2D(Collision2D collision) 
     {
+<<<<<<< HEAD
         if(collision.gameObject.CompareTag("Moveable"))
         {
             var relativePosition = transform.InverseTransformPoint(collision.transform.position);
@@ -30,6 +31,11 @@ public class MoveableCollision : MonoBehaviour
             {
                 Player.GetComponent<PlayerController>().movePoint.transform.position += new Vector3(0f, -.72f, 0f);
             }
+=======
+        if(collision.gameObject.CompareTag("Wall"))
+        {
+            Player.GetComponent<PlayerController>().StartCoroutine("MoveCooldownHorizontal");
+>>>>>>> e6d57d42317b14f3dc66fe2ee7993341476a3c0e
         }
     }
 }
