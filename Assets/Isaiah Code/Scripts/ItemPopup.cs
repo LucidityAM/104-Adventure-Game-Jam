@@ -15,30 +15,39 @@ public class ItemPopup : MonoBehaviour
 
     private Animator anim;
 
+    private bool isOpen;
     public void Start()
     {
         anim = popup.GetComponent<Animator>();
         popup.SetActive(false);
+        //isOpen = false;
     }
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            popup.SetActive(true);
-
-            popup.GetComponent<Image>().sprite = imageToAppear;
-
-            playerController.enabled = false;
+            if (isOpen == false)
+            {
+                popup.SetActive(true);
+                anim.SetBool("FadeOut", true);
+                popup.GetComponent<Image>().sprite = imageToAppear;
+                playerController.enabled = false;
+                isOpen = true;
+            }
         }
     }
 
     void Update()
     {
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            anim.SetTrigger("FadeOut");
-            StartCoroutine(Enable());
+            if (isOpen)
+            {
+                anim.SetBool("FadeOut", false);
+                StartCoroutine(Enable());
+            }
         }
     }
 
@@ -48,6 +57,7 @@ public class ItemPopup : MonoBehaviour
 
         popup.SetActive(false);
         playerController.enabled = true;
+        isOpen = false;
     }
 
 }
