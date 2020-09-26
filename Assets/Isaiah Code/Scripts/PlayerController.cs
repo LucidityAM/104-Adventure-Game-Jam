@@ -85,6 +85,15 @@ public class PlayerController : MonoBehaviour
             {
                 Debug.Log("up");
                 collision.transform.position += new Vector3(0f, .72f, 0f);
+
+                if (!Physics2D.OverlapCircle(collision.transform.position + new Vector3(0f, (Input.GetAxisRaw("Vertical") * .72f), 0f), .5f, whatStopsMovement))
+                {
+                    collision.transform.position += new Vector3(0f, .72f, 0f);
+                }
+                else
+                {
+                    movePoint.transform.position += new Vector3(0f, -.72f, 0f);
+                }
             }
             else if (vertPosition == 0)
             {
@@ -92,17 +101,49 @@ public class PlayerController : MonoBehaviour
                 {
                     Debug.Log("left");
                     collision.transform.position += new Vector3(-.72f, 0f, 0f);
+
+                    if (!Physics2D.OverlapCircle(movePoint.position + new Vector3((Input.GetAxisRaw("Horizontal") * .72f), 0f, 0f), 1.6f, whatStopsMovement))
+                    {
+                        collision.transform.position += new Vector3(-.72f, 0f, 0f);
+                    }
+                    else
+                    {
+                        movePoint.transform.position += new Vector3(.72f, 0f, 0f);
+                    }
+
                 }
                 else if (relativePosition.x > 0)
                 {
                     Debug.Log("right");
+
                     collision.transform.position += new Vector3(.72f, 0f, 0f);
+
+                    if (!Physics2D.OverlapCircle(movePoint.position + new Vector3((Input.GetAxisRaw("Horizontal") * .72f), 0f, 0f), 1.6f, whatStopsMovement))
+                    {
+                        collision.transform.position += new Vector3(.72f, 0f, 0f);
+                    }
+                    else
+                    {
+                        movePoint.transform.position += new Vector3(-.72f, 0f, 0f);
+                    }
+
                 }
             }
             else if (relativePosition.y < 0)
             {
                 Debug.Log("down");
+
                 collision.transform.position += new Vector3(0f, -.72f, 0f);
+
+                if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, (Input.GetAxisRaw("Vertical") * .72f), 0f), .5f, whatStopsMovement))
+                {
+                    collision.transform.position += new Vector3(0f, -.72f, 0f);
+                }
+                else
+                {
+                    movePoint.transform.position += new Vector3(0f, .72f, 0f);
+                }
+
             }
         } //Checks where the player is in relationship to the moveable object and then moves the object accordingly
     }
