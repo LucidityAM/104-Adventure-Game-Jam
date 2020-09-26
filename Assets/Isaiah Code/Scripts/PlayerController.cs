@@ -7,11 +7,10 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed = 5f;
     public Transform movePoint;
     public LayerMask whatStopsMovement;
-    private LayerMask moveableObjects = 9;
 
     public Animator anim;
 
-    public float vertPosition;
+    private float vertPosition;
     private float horPosition;
 
     private bool vertMove;
@@ -24,8 +23,6 @@ public class PlayerController : MonoBehaviour
 
         horMove = true;
         vertMove = true;
-
-        MoveNumber.moveCount = 30;
     }
 
     // Update is called once per frame
@@ -87,65 +84,31 @@ public class PlayerController : MonoBehaviour
             if (relativePosition.y > 0)
             {
                 Debug.Log("up");
-                if (!Physics2D.OverlapCircle(collision.transform.position + new Vector3(0f, (Input.GetAxisRaw("Vertical") * .72f), 0f), .5f, whatStopsMovement) &&
-                !Physics2D.OverlapCircle(collision.transform.position + new Vector3(0f, (Input.GetAxisRaw("Vertical") * .72f), 0f), .4f, moveableObjects))
-                {
-                    collision.transform.position += new Vector3(0f, .72f, 0f);
-                }
-                else
-                {
-                    movePoint.transform.position += new Vector3(0f, -.72f, 0f);
-                }
+                collision.transform.position += new Vector3(0f, .72f, 0f);
             }
             else if (vertPosition == 0)
             {
                 if (relativePosition.x < 0)
                 {
                     Debug.Log("left");
-                    if (!Physics2D.OverlapCircle(movePoint.position + new Vector3((Input.GetAxisRaw("Horizontal") * .72f), 0f, 0f), 1.6f, whatStopsMovement) &&
-                    !Physics2D.OverlapCircle(movePoint.position + new Vector3((Input.GetAxisRaw("Horizontal") * .72f), 0f, 0f), .4f, moveableObjects))
-                    {
-                        collision.transform.position += new Vector3(-.72f, 0f, 0f);
-                    }
-                    else
-                    {
-                        movePoint.transform.position += new Vector3(.72f, 0f, 0f);
-                    }
+                    collision.transform.position += new Vector3(-.72f, 0f, 0f);
                 }
                 else if (relativePosition.x > 0)
                 {
                     Debug.Log("right");
-                    if (!Physics2D.OverlapCircle(movePoint.position + new Vector3((Input.GetAxisRaw("Horizontal") * .72f), 0f, 0f), 1.6f, whatStopsMovement) &&
-                    !Physics2D.OverlapCircle(movePoint.position + new Vector3((Input.GetAxisRaw("Horizontal") * .72f), 0f, 0f), .4f, moveableObjects))
-                    {
-                        collision.transform.position += new Vector3(.72f, 0f, 0f);
-                    }
-                    else
-                    {
-                        movePoint.transform.position += new Vector3(-.72f, 0f, 0f);
-                    }
+                    collision.transform.position += new Vector3(.72f, 0f, 0f);
                 }
             }
             else if (relativePosition.y < 0)
             {
                 Debug.Log("down");
-                if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, (Input.GetAxisRaw("Vertical") * .72f), 0f), .5f, whatStopsMovement) &&
-                !Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, (Input.GetAxisRaw("Vertical") * .72f), 0f), .4f, moveableObjects))
-                {
-                    collision.transform.position += new Vector3(0f, -.72f, 0f);
-                }
-                else
-                {
-                    movePoint.transform.position += new Vector3(0f, .72f, 0f);
-                }
+                collision.transform.position += new Vector3(0f, -.72f, 0f);
             }
         } //Checks where the player is in relationship to the moveable object and then moves the object accordingly
     }
 
     public IEnumerator MoveCooldownHorizontal()
     {
-        MoveNumber.moveCount -= 1;
-
         yield return new WaitForSeconds(.3f);
 
         horMove = true;
@@ -155,8 +118,6 @@ public class PlayerController : MonoBehaviour
 
     public IEnumerator MoveCooldownVertical()
     {
-        MoveNumber.moveCount -= 1;
-
         yield return new WaitForSeconds(.3f);
 
         vertMove = true;
