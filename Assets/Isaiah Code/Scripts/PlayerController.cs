@@ -39,8 +39,9 @@ public class PlayerController : MonoBehaviour
 
             if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) == 1f)
             {
-                if (!Physics2D.OverlapCircle(movePoint.position + new Vector3((Input.GetAxisRaw("Horizontal") * .72f), 0f, 0f), .2f, whatStopsMovement) && horMove == true) //Checks if there is something to collide with in the player move spot
+                if (!Physics2D.OverlapCircle(movePoint.position + new Vector3((Input.GetAxisRaw("Horizontal") * .72f), 0f, 0f), .3f, whatStopsMovement) && horMove == true) //Checks if there is something to collide with in the player move spot
                 {
+
                     StartCoroutine(MoveCooldownHorizontal());
 
                     horMove = false;
@@ -56,8 +57,9 @@ public class PlayerController : MonoBehaviour
             }
             else if (Mathf.Abs(Input.GetAxisRaw("Vertical")) == 1f)
             {
-                if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, (Input.GetAxisRaw("Vertical") * .72f), 0f), .2f, whatStopsMovement) && vertMove == true)
+                if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, (Input.GetAxisRaw("Vertical") * .72f), 0f), .3f, whatStopsMovement) && vertMove == true)
                 {
+
                     StartCoroutine(MoveCooldownVertical());
 
                     vertMove = false;
@@ -87,13 +89,11 @@ public class PlayerController : MonoBehaviour
             if (relativePosition.y > 0)
             {
                 Debug.Log("up");
-                if (!Physics2D.OverlapCircle(collision.transform.position + new Vector3(0f, (Input.GetAxisRaw("Vertical") * .72f), 0f), .5f, whatStopsMovement) &&
-                !Physics2D.OverlapCircle(collision.transform.position + new Vector3(0f, (Input.GetAxisRaw("Vertical") * .72f), 0f), .4f, moveableObjects))
-                collision.transform.position += new Vector3(0f, .72f, 0f);
-
-                if (!Physics2D.OverlapCircle(collision.transform.position + new Vector3(0f, (Input.GetAxisRaw("Vertical") * .72f), 0f), .5f, whatStopsMovement))
+                if (!Physics2D.OverlapCircle(collision.transform.position + new Vector3(0f, (Input.GetAxisRaw("Vertical") * .72f), 0f), .3f, whatStopsMovement) &&
+                !Physics2D.OverlapCircle(collision.transform.position + new Vector3(0f, (Input.GetAxisRaw("Vertical") * .72f), 0f), .3f, moveableObjects))
                 {
                     collision.transform.position += new Vector3(0f, .72f, 0f);
+                    MoveNumber.moveCount -= 1;
                 }
                 else
                 {
@@ -105,14 +105,11 @@ public class PlayerController : MonoBehaviour
                 if (relativePosition.x < 0)
                 {
                     Debug.Log("left");
-                    if (!Physics2D.OverlapCircle(movePoint.position + new Vector3((Input.GetAxisRaw("Horizontal") * .72f), 0f, 0f), 1.6f, whatStopsMovement) &&
-                    !Physics2D.OverlapCircle(movePoint.position + new Vector3((Input.GetAxisRaw("Horizontal") * .72f), 0f, 0f), .4f, moveableObjects))
-
-                    collision.transform.position += new Vector3(-.72f, 0f, 0f);
-
-                    if (!Physics2D.OverlapCircle(movePoint.position + new Vector3((Input.GetAxisRaw("Horizontal") * .72f), 0f, 0f), 1.6f, whatStopsMovement))
+                    if (!Physics2D.OverlapCircle(collision.transform.position + new Vector3((Input.GetAxisRaw("Horizontal") * .72f), 0f, 0f), .3f, whatStopsMovement) &&
+                    !Physics2D.OverlapCircle(collision.transform.position + new Vector3((Input.GetAxisRaw("Horizontal") * .72f), 0f, 0f), .3f, moveableObjects))
                     {
                         collision.transform.position += new Vector3(-.72f, 0f, 0f);
+                        MoveNumber.moveCount -= 1;
                     }
                     else
                     {
@@ -124,16 +121,11 @@ public class PlayerController : MonoBehaviour
                 {
                     Debug.Log("right");
 
-                    if (!Physics2D.OverlapCircle(movePoint.position + new Vector3((Input.GetAxisRaw("Horizontal") * .72f), 0f, 0f), 1.6f, whatStopsMovement) &&
-                    !Physics2D.OverlapCircle(movePoint.position + new Vector3((Input.GetAxisRaw("Horizontal") * .72f), 0f, 0f), .4f, moveableObjects))
-
-
-                    collision.transform.position += new Vector3(.72f, 0f, 0f);
-
-                    if (!Physics2D.OverlapCircle(movePoint.position + new Vector3((Input.GetAxisRaw("Horizontal") * .72f), 0f, 0f), 1.6f, whatStopsMovement))
-
+                    if (!Physics2D.OverlapCircle(collision.transform.position + new Vector3((Input.GetAxisRaw("Horizontal") * .72f), 0f, 0f), .3f, whatStopsMovement) &&
+                    !Physics2D.OverlapCircle(collision.transform.position + new Vector3((Input.GetAxisRaw("Horizontal") * .72f), 0f, 0f), .3f, moveableObjects))
                     {
                         collision.transform.position += new Vector3(.72f, 0f, 0f);
+                        MoveNumber.moveCount -= 1;
                     }
                     else
                     {
@@ -148,16 +140,11 @@ public class PlayerController : MonoBehaviour
             {
                 Debug.Log("down");
 
-                if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, (Input.GetAxisRaw("Vertical") * .72f), 0f), .5f, whatStopsMovement) &&
-                !Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, (Input.GetAxisRaw("Vertical") * .72f), 0f), .4f, moveableObjects))
-
-
-                collision.transform.position += new Vector3(0f, -.72f, 0f);
-
-                if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, (Input.GetAxisRaw("Vertical") * .72f), 0f), .5f, whatStopsMovement))
-
+                if (!Physics2D.OverlapCircle(collision.transform.position + new Vector3(0f, (Input.GetAxisRaw("Vertical") * .72f), 0f), .3f, whatStopsMovement) &&
+                !Physics2D.OverlapCircle(collision.transform.position + new Vector3(0f, (Input.GetAxisRaw("Vertical") * .72f), 0f), .3f, moveableObjects))
                 {
                     collision.transform.position += new Vector3(0f, -.72f, 0f);
+                    MoveNumber.moveCount -= 1;
                 }
                 else
                 {
@@ -170,9 +157,7 @@ public class PlayerController : MonoBehaviour
 
     public IEnumerator MoveCooldownHorizontal()
     {
-        MoveNumber.moveCount -= 1;
-
-        yield return new WaitForSeconds(.3f);
+        yield return new WaitForSeconds(.5f);
 
         horMove = true;
 
@@ -181,9 +166,7 @@ public class PlayerController : MonoBehaviour
 
     public IEnumerator MoveCooldownVertical()
     {
-        MoveNumber.moveCount -= 1;
-
-        yield return new WaitForSeconds(.3f);
+        yield return new WaitForSeconds(.5f);
 
         vertMove = true;
 
