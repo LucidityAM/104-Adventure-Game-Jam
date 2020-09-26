@@ -557,7 +557,7 @@ GameObject:
   - component: {fileID: 71367223}
   m_Layer: 0
   m_Name: Lamp
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -570,7 +570,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 71367221}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.75, y: 1.26, z: 0}
+  m_LocalPosition: {x: 4.7, y: -0.31, z: 0}
   m_LocalScale: {x: 0.9299726, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1430778144}
@@ -604,7 +604,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0014775544, y: -0.10720962}
+  m_Offset: {x: -0.00079625845, y: -0.31805035}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -615,7 +615,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.48056749, y: 1.0606431}
+  m_Size: {x: 0.7340971, y: 0.6941863}
   m_EdgeRadius: 0
 --- !u!212 &71367225
 SpriteRenderer:
@@ -6097,7 +6097,6 @@ GameObject:
   - component: {fileID: 1300385043}
   - component: {fileID: 1300385045}
   - component: {fileID: 1300385044}
-  - component: {fileID: 1300385046}
   m_Layer: 9
   m_Name: Phone (7)
   m_TagString: Moveable
@@ -6195,20 +6194,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1300385046
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1300385042}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4af403d25c9d926381d0d141b93f72d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Object: {fileID: 0}
-  Player: {fileID: 0}
 --- !u!1 &1339653310
 GameObject:
   m_ObjectHideFlags: 0
@@ -8091,7 +8076,7 @@ MonoBehaviour:
     m_Bits: 256
   moveableObjects:
     serializedVersion: 2
-    m_Bits: 9
+    m_Bits: 512
   anim: {fileID: 2809258151005149281}
   vertPosition: 0
 --- !u!50 &2809258151005149284
@@ -8566,6 +8551,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 4969999887610289903, guid: 0b546b6b19423774fb5086f83be03723,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9192303774392399230, guid: 0b546b6b19423774fb5086f83be03723,
         type: 3}
