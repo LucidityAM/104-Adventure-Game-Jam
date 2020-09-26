@@ -243,7 +243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Object: {fileID: 0}
-  Player: {fileID: 2809258151005149282}
+  Player: {fileID: 0}
 --- !u!1001 &6485623
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -794,7 +794,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Object: {fileID: 0}
-  Player: {fileID: 2809258151005149282}
+  Player: {fileID: 0}
 --- !u!61 &133758763
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -993,7 +993,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Object: {fileID: 0}
-  Player: {fileID: 2809258151005149282}
+  Player: {fileID: 0}
 --- !u!1 &291015404
 GameObject:
   m_ObjectHideFlags: 0
@@ -3975,7 +3975,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Object: {fileID: 0}
-  Player: {fileID: 2809258151005149282}
+  Player: {fileID: 0}
 --- !u!61 &664179034
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4174,7 +4174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Object: {fileID: 0}
-  Player: {fileID: 2809258151005149282}
+  Player: {fileID: 0}
 --- !u!1 &694563752
 GameObject:
   m_ObjectHideFlags: 0
@@ -4312,7 +4312,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Object: {fileID: 0}
-  Player: {fileID: 2809258151005149282}
+  Player: {fileID: 0}
 --- !u!1 &728572442
 GameObject:
   m_ObjectHideFlags: 0
@@ -4435,7 +4435,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Object: {fileID: 0}
-  Player: {fileID: 2809258151005149282}
+  Player: {fileID: 0}
 --- !u!1001 &756570777
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4692,7 +4692,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Object: {fileID: 0}
-  Player: {fileID: 2809258151005149282}
+  Player: {fileID: 0}
 --- !u!1 &979750885
 GameObject:
   m_ObjectHideFlags: 0
@@ -5020,7 +5020,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Object: {fileID: 0}
-  Player: {fileID: 2809258151005149282}
+  Player: {fileID: 0}
 --- !u!1 &1053946088
 GameObject:
   m_ObjectHideFlags: 0
@@ -5067,7 +5067,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Object: {fileID: 0}
-  Player: {fileID: 2809258151005149282}
+  Player: {fileID: 0}
 --- !u!61 &1053946091
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5190,7 +5190,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Object: {fileID: 0}
-  Player: {fileID: 2809258151005149282}
+  Player: {fileID: 0}
 --- !u!61 &1072116535
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5389,7 +5389,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Object: {fileID: 0}
-  Player: {fileID: 2809258151005149282}
+  Player: {fileID: 0}
 --- !u!1 &1084192760
 GameObject:
   m_ObjectHideFlags: 0
@@ -5512,7 +5512,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Object: {fileID: 0}
-  Player: {fileID: 2809258151005149282}
+  Player: {fileID: 0}
 --- !u!1 &1104251629
 GameObject:
   m_ObjectHideFlags: 0
@@ -5635,7 +5635,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Object: {fileID: 0}
-  Player: {fileID: 2809258151005149282}
+  Player: {fileID: 0}
 --- !u!1 &1198054660
 GameObject:
   m_ObjectHideFlags: 0
@@ -5839,7 +5839,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Object: {fileID: 0}
-  Player: {fileID: 2809258151005149282}
+  Player: {fileID: 0}
 --- !u!1 &1237086287
 GameObject:
   m_ObjectHideFlags: 0
@@ -5898,7 +5898,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Object: {fileID: 0}
-  Player: {fileID: 2809258151005149282}
+  Player: {fileID: 0}
 --- !u!212 &1237086290
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6085,7 +6085,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Object: {fileID: 0}
-  Player: {fileID: 2809258151005149282}
+  Player: {fileID: 0}
 --- !u!1 &1300385042
 GameObject:
   m_ObjectHideFlags: 0
@@ -6208,7 +6208,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Object: {fileID: 0}
-  Player: {fileID: 2809258151005149282}
+  Player: {fileID: 0}
 --- !u!1 &1339653310
 GameObject:
   m_ObjectHideFlags: 0
@@ -6440,7 +6440,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Object: {fileID: 0}
-  Player: {fileID: 2809258151005149282}
+  Player: {fileID: 0}
 --- !u!1 &1370513571
 GameObject:
   m_ObjectHideFlags: 0
@@ -6563,7 +6563,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Object: {fileID: 0}
-  Player: {fileID: 2809258151005149282}
+  Player: {fileID: 0}
 --- !u!1 &1430778143
 GameObject:
   m_ObjectHideFlags: 0
@@ -6923,7 +6923,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Object: {fileID: 0}
-  Player: {fileID: 2809258151005149282}
+  Player: {fileID: 0}
 --- !u!1 &1627137047
 GameObject:
   m_ObjectHideFlags: 0
@@ -7046,7 +7046,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Object: {fileID: 0}
-  Player: {fileID: 2809258151005149282}
+  Player: {fileID: 0}
 --- !u!1 &1799548579
 GameObject:
   m_ObjectHideFlags: 0
@@ -7394,7 +7394,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Object: {fileID: 0}
-  Player: {fileID: 2809258151005149282}
+  Player: {fileID: 0}
 --- !u!1 &1861126159
 GameObject:
   m_ObjectHideFlags: 0
@@ -7517,7 +7517,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Object: {fileID: 0}
-  Player: {fileID: 2809258151005149282}
+  Player: {fileID: 0}
 --- !u!1 &1862464710
 GameObject:
   m_ObjectHideFlags: 0
@@ -7640,7 +7640,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Object: {fileID: 0}
-  Player: {fileID: 2809258151005149282}
+  Player: {fileID: 0}
 --- !u!1 &2089884372
 GameObject:
   m_ObjectHideFlags: 0
@@ -7878,7 +7878,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Object: {fileID: 0}
-  Player: {fileID: 2809258151005149282}
+  Player: {fileID: 0}
 --- !u!114 &1179563408682845696
 MonoBehaviour:
   m_ObjectHideFlags: 0
