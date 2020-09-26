@@ -320,6 +320,8 @@ public class DialogueManager : MonoBehaviour
         //checks if theres a prompt, if theres a prompt, you go there instead of ending
         if (prompt)
         {
+            characterLeftSprite.SetBool("isOpen", false);
+            characterRightSprite.SetBool("isOpen", false);
             StartCoroutine(FindObjectOfType<QuestionManager>().StartQuestion(question));
         }
         else
