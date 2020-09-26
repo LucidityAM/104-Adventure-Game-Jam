@@ -17,6 +17,8 @@ public class PlayerController : MonoBehaviour
     private bool vertMove;
     private bool horMove;
 
+    public int moveNumberForScene;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +27,7 @@ public class PlayerController : MonoBehaviour
         horMove = true;
         vertMove = true;
 
-        MoveNumber.moveCount = 30;
+        MoveNumber.moveCount = moveNumberForScene;
     }
 
     // Update is called once per frame
@@ -81,6 +83,38 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+
+        if (collision.gameObject.CompareTag("Interactable"))
+        {
+            var relativePosition = transform.InverseTransformPoint(collision.transform.position);
+
+            if (relativePosition.y > 0)
+            {
+               movePoint.transform.position += new Vector3(0f, -.72f, 0f);
+            }
+            else if (vertPosition == 0)
+            {
+                if (relativePosition.x < 0)
+                {
+
+                    movePoint.transform.position += new Vector3(.72f, 0f, 0f);
+
+
+                }
+                else if (relativePosition.x > 0)
+                {
+
+                    movePoint.transform.position += new Vector3(-.72f, 0f, 0f);
+                }
+            }
+            else if (relativePosition.y < 0)
+            {
+
+                movePoint.transform.position += new Vector3(0f, .72f, 0f);
+
+            }
+        }
+
         if(collision.gameObject.CompareTag("Moveable"))
         {
             var relativePosition = transform.InverseTransformPoint(collision.transform.position);
