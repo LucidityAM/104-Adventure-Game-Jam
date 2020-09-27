@@ -199,6 +199,7 @@ GameObject:
   - component: {fileID: 284994051}
   - component: {fileID: 284994050}
   - component: {fileID: 284994053}
+  - component: {fileID: 284994054}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -302,6 +303,18 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!114 &284994054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284994049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78deea3dac4beb1499bc1c1fdb29f332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &290998754
 GameObject:
   m_ObjectHideFlags: 0
@@ -533,8 +546,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.5, y: -4201}
-  m_SizeDelta: {x: -1537.1958, y: 2916.433}
+  m_AnchoredPosition: {x: -0.5, y: -5756}
+  m_SizeDelta: {x: -1537.1958, y: 7200.434}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &512315147
 Animator:
@@ -587,8 +600,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "fortnite \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nthanks
-    for playing!"
+  m_Text: 
 --- !u!222 &512315149
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -631,7 +643,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.5, y: 111.099976}
+  m_AnchoredPosition: {x: -0.5, y: 111.1001}
   m_SizeDelta: {x: -1, y: 1796.9897}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1871457103

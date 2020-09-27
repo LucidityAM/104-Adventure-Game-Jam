@@ -13,7 +13,7 @@ public class MainMenu : MonoBehaviour
 
     private bool isOpened;
 
-    //public PlayerController Player;
+    public PlayerController Player;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,23 +37,25 @@ public class MainMenu : MonoBehaviour
     public IEnumerator OpenMenu()
     {
         //turnign off player shit
-        //Player.enabled = false;
-
+        Player.enabled = false;
+        
         mainMenuBG.SetActive(true);
         mainMenuBGAnim.SetBool("isOpen", true);
         yield return new WaitForSeconds(0.3f);
         resumeButton.SetActive(true);
         quitButton.SetActive(true);
+        yield return new WaitForSeconds(0.5f);
     }
 
     public IEnumerator CloseMenu()
     {
-        //Player.enabled = true;
+        Player.enabled = true;
         resumeButton.SetActive(false);
         quitButton.SetActive(false);
         mainMenuBGAnim.SetBool("isOpen", false);
-        yield return new WaitForSeconds(0.4f);
+        yield return new WaitForSeconds(0.3f);
         mainMenuBG.SetActive(false);
+        yield return new WaitForSeconds(0.5f);
     }
 
     public void StartIEnumerator(string name)
