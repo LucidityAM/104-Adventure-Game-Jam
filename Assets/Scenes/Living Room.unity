@@ -820,7 +820,7 @@ PrefabInstance:
     - target: {fileID: 2552823494958632018, guid: 0b546b6b19423774fb5086f83be03723,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2552823494958632018, guid: 0b546b6b19423774fb5086f83be03723,
         type: 3}
@@ -1781,7 +1781,7 @@ PrefabInstance:
     - target: {fileID: 3679485825954159455, guid: b8279b41133c72d4c876e9060bf4addf,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3679485825954159455, guid: b8279b41133c72d4c876e9060bf4addf,
         type: 3}
@@ -2303,6 +2303,2716 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!1 &560547299
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 560547303}
+  - component: {fileID: 560547302}
+  - component: {fileID: 560547301}
+  - component: {fileID: 560547300}
+  m_Layer: 0
+  m_Name: Stove
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &560547300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560547299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b67c673f4c7db0a45a5ad67670f01cd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - ...
+    - 'You have to find out why they left you. '
+    - I...do?
+    - What can you even remember about them?
+    - "I remember reading a book on Mom\u2019s lap, waiting for Dad to come home.
+      He did, and we ate a meal happily together. Mom was kind, and Dad worked hard."
+    - You try so hard to be like the parents you hardly remember.
+    names:
+    - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
+    - {fileID: 21300000, guid: e1f5b6a690fc9564eb71a6858e18493b, type: 3}
+    - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
+    - {fileID: 21300000, guid: e1f5b6a690fc9564eb71a6858e18493b, type: 3}
+    - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
+    - {fileID: 21300000, guid: e1f5b6a690fc9564eb71a6858e18493b, type: 3}
+    sprites: []
+    background: {fileID: 0}
+    sceneTransition: 0
+    sceneName: 
+    prompt: 1
+    question:
+      correctAnswer: 
+      option1: Maybe I do.
+      option2: Thats not true!
+      option3: I don't care.
+      path1:
+        sentences:
+        - 'Maybe I do. '
+        - Why? They just left you in this world...
+        names:
+        - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
+        - {fileID: 21300000, guid: e1f5b6a690fc9564eb71a6858e18493b, type: 3}
+        sprites: []
+        background: {fileID: 0}
+        sceneTransition: 0
+        sceneName: 
+        prompt: 1
+        question:
+          correctAnswer: 
+          option1: It wasn't their choice.
+          option2: They ruined me...
+          option3: This is pointless...
+          path1:
+            sentences:
+            - Maybe it wasn't their choice.
+            - You don't even know how they died! You have to find out!
+            names:
+            - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
+            - {fileID: 21300000, guid: e1f5b6a690fc9564eb71a6858e18493b, type: 3}
+            sprites: []
+            background: {fileID: 0}
+            sceneTransition: 0
+            sceneName: 
+            prompt: 1
+            question:
+              correctAnswer: 
+              option1: I don't need to.
+              option2: Yes I do!
+              option3: What's the point?
+              path1:
+                sentences:
+                - I don't need to.
+                - Why can't you just admit that this is your reality!?
+                names:
+                - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
+                - {fileID: 21300000, guid: e1f5b6a690fc9564eb71a6858e18493b, type: 3}
+                sprites: []
+                background: {fileID: 0}
+                sceneTransition: 0
+                sceneName: 
+                prompt: 1
+                question:
+                  correctAnswer: 
+                  option1: You're right...
+                  option2: There's no point in that.
+                  option3: This is my reality...
+                  path1:
+                    sentences:
+                    - I can't do this anymore...
+                    names:
+                    - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 1
+                    sceneName: Living Room
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path2:
+                    sentences:
+                    - "Certainty is a trap. I can\u2019t control what might have
+                      been in the past, and what might be in the future. What matters
+                      are my actions in the present moment."
+                    names:
+                    - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 1
+                    sceneName: Kitchen
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path3:
+                    sentences:
+                    - I can't do this anymore...
+                    names:
+                    - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 1
+                    sceneName: Living Room
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+              path2:
+                sentences:
+                - I can't do this anymore...
+                names:
+                - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
+                sprites: []
+                background: {fileID: 0}
+                sceneTransition: 1
+                sceneName: Living Room
+                prompt: 0
+                question:
+                  correctAnswer: 
+                  option1: 
+                  option2: 
+                  option3: 
+                  path1:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path2:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path3:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+              path3:
+                sentences:
+                - I can't do this anymore...
+                names:
+                - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
+                sprites: []
+                background: {fileID: 0}
+                sceneTransition: 1
+                sceneName: Living Room
+                prompt: 0
+                question:
+                  correctAnswer: 
+                  option1: 
+                  option2: 
+                  option3: 
+                  path1:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path2:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path3:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+          path2:
+            sentences:
+            - I can't do this anymore...
+            names:
+            - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
+            sprites: []
+            background: {fileID: 0}
+            sceneTransition: 1
+            sceneName: Living Room
+            prompt: 0
+            question:
+              correctAnswer: 
+              option1: 
+              option2: 
+              option3: 
+              path1:
+                sentences: []
+                names: []
+                sprites: []
+                background: {fileID: 0}
+                sceneTransition: 0
+                sceneName: 
+                prompt: 0
+                question:
+                  correctAnswer: 
+                  option1: 
+                  option2: 
+                  option3: 
+                  path1:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path2:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path3:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+              path2:
+                sentences: []
+                names: []
+                sprites: []
+                background: {fileID: 0}
+                sceneTransition: 0
+                sceneName: 
+                prompt: 0
+                question:
+                  correctAnswer: 
+                  option1: 
+                  option2: 
+                  option3: 
+                  path1:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path2:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path3:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+              path3:
+                sentences: []
+                names: []
+                sprites: []
+                background: {fileID: 0}
+                sceneTransition: 0
+                sceneName: 
+                prompt: 0
+                question:
+                  correctAnswer: 
+                  option1: 
+                  option2: 
+                  option3: 
+                  path1:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path2:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path3:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+          path3:
+            sentences:
+            - I can't do this anymore...
+            names:
+            - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
+            sprites: []
+            background: {fileID: 0}
+            sceneTransition: 1
+            sceneName: Living Room
+            prompt: 0
+            question:
+              correctAnswer: 
+              option1: 
+              option2: 
+              option3: 
+              path1:
+                sentences: []
+                names: []
+                sprites: []
+                background: {fileID: 0}
+                sceneTransition: 0
+                sceneName: 
+                prompt: 0
+                question:
+                  correctAnswer: 
+                  option1: 
+                  option2: 
+                  option3: 
+                  path1:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path2:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path3:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+              path2:
+                sentences: []
+                names: []
+                sprites: []
+                background: {fileID: 0}
+                sceneTransition: 0
+                sceneName: 
+                prompt: 0
+                question:
+                  correctAnswer: 
+                  option1: 
+                  option2: 
+                  option3: 
+                  path1:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path2:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path3:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+              path3:
+                sentences: []
+                names: []
+                sprites: []
+                background: {fileID: 0}
+                sceneTransition: 0
+                sceneName: 
+                prompt: 0
+                question:
+                  correctAnswer: 
+                  option1: 
+                  option2: 
+                  option3: 
+                  path1:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path2:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path3:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+      path2:
+        sentences:
+        - I can't do this anymore...
+        names:
+        - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
+        sprites: []
+        background: {fileID: 0}
+        sceneTransition: 1
+        sceneName: Living Room
+        prompt: 0
+        question:
+          correctAnswer: 
+          option1: 
+          option2: 
+          option3: 
+          path1:
+            sentences: []
+            names: []
+            sprites: []
+            background: {fileID: 0}
+            sceneTransition: 0
+            sceneName: 
+            prompt: 0
+            question:
+              correctAnswer: 
+              option1: 
+              option2: 
+              option3: 
+              path1:
+                sentences: []
+                names: []
+                sprites: []
+                background: {fileID: 0}
+                sceneTransition: 0
+                sceneName: 
+                prompt: 0
+                question:
+                  correctAnswer: 
+                  option1: 
+                  option2: 
+                  option3: 
+                  path1:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path2:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path3:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+              path2:
+                sentences: []
+                names: []
+                sprites: []
+                background: {fileID: 0}
+                sceneTransition: 0
+                sceneName: 
+                prompt: 0
+                question:
+                  correctAnswer: 
+                  option1: 
+                  option2: 
+                  option3: 
+                  path1:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path2:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path3:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+              path3:
+                sentences: []
+                names: []
+                sprites: []
+                background: {fileID: 0}
+                sceneTransition: 0
+                sceneName: 
+                prompt: 0
+                question:
+                  correctAnswer: 
+                  option1: 
+                  option2: 
+                  option3: 
+                  path1:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path2:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path3:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+          path2:
+            sentences: []
+            names: []
+            sprites: []
+            background: {fileID: 0}
+            sceneTransition: 0
+            sceneName: 
+            prompt: 0
+            question:
+              correctAnswer: 
+              option1: 
+              option2: 
+              option3: 
+              path1:
+                sentences: []
+                names: []
+                sprites: []
+                background: {fileID: 0}
+                sceneTransition: 0
+                sceneName: 
+                prompt: 0
+                question:
+                  correctAnswer: 
+                  option1: 
+                  option2: 
+                  option3: 
+                  path1:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path2:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path3:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+              path2:
+                sentences: []
+                names: []
+                sprites: []
+                background: {fileID: 0}
+                sceneTransition: 0
+                sceneName: 
+                prompt: 0
+                question:
+                  correctAnswer: 
+                  option1: 
+                  option2: 
+                  option3: 
+                  path1:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path2:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path3:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+              path3:
+                sentences: []
+                names: []
+                sprites: []
+                background: {fileID: 0}
+                sceneTransition: 0
+                sceneName: 
+                prompt: 0
+                question:
+                  correctAnswer: 
+                  option1: 
+                  option2: 
+                  option3: 
+                  path1:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path2:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path3:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+          path3:
+            sentences: []
+            names: []
+            sprites: []
+            background: {fileID: 0}
+            sceneTransition: 0
+            sceneName: 
+            prompt: 0
+            question:
+              correctAnswer: 
+              option1: 
+              option2: 
+              option3: 
+              path1:
+                sentences: []
+                names: []
+                sprites: []
+                background: {fileID: 0}
+                sceneTransition: 0
+                sceneName: 
+                prompt: 0
+                question:
+                  correctAnswer: 
+                  option1: 
+                  option2: 
+                  option3: 
+                  path1:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path2:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path3:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+              path2:
+                sentences: []
+                names: []
+                sprites: []
+                background: {fileID: 0}
+                sceneTransition: 0
+                sceneName: 
+                prompt: 0
+                question:
+                  correctAnswer: 
+                  option1: 
+                  option2: 
+                  option3: 
+                  path1:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path2:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path3:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+              path3:
+                sentences: []
+                names: []
+                sprites: []
+                background: {fileID: 0}
+                sceneTransition: 0
+                sceneName: 
+                prompt: 0
+                question:
+                  correctAnswer: 
+                  option1: 
+                  option2: 
+                  option3: 
+                  path1:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path2:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path3:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+      path3:
+        sentences:
+        - I can't do this anymore...
+        names: []
+        sprites: []
+        background: {fileID: 0}
+        sceneTransition: 1
+        sceneName: Living Room
+        prompt: 0
+        question:
+          correctAnswer: 
+          option1: 
+          option2: 
+          option3: 
+          path1:
+            sentences: []
+            names: []
+            sprites: []
+            background: {fileID: 0}
+            sceneTransition: 0
+            sceneName: 
+            prompt: 0
+            question:
+              correctAnswer: 
+              option1: 
+              option2: 
+              option3: 
+              path1:
+                sentences: []
+                names: []
+                sprites: []
+                background: {fileID: 0}
+                sceneTransition: 0
+                sceneName: 
+                prompt: 0
+                question:
+                  correctAnswer: 
+                  option1: 
+                  option2: 
+                  option3: 
+                  path1:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path2:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path3:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+              path2:
+                sentences: []
+                names: []
+                sprites: []
+                background: {fileID: 0}
+                sceneTransition: 0
+                sceneName: 
+                prompt: 0
+                question:
+                  correctAnswer: 
+                  option1: 
+                  option2: 
+                  option3: 
+                  path1:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path2:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path3:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+              path3:
+                sentences: []
+                names: []
+                sprites: []
+                background: {fileID: 0}
+                sceneTransition: 0
+                sceneName: 
+                prompt: 0
+                question:
+                  correctAnswer: 
+                  option1: 
+                  option2: 
+                  option3: 
+                  path1:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path2:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path3:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+          path2:
+            sentences: []
+            names: []
+            sprites: []
+            background: {fileID: 0}
+            sceneTransition: 0
+            sceneName: 
+            prompt: 0
+            question:
+              correctAnswer: 
+              option1: 
+              option2: 
+              option3: 
+              path1:
+                sentences: []
+                names: []
+                sprites: []
+                background: {fileID: 0}
+                sceneTransition: 0
+                sceneName: 
+                prompt: 0
+                question:
+                  correctAnswer: 
+                  option1: 
+                  option2: 
+                  option3: 
+                  path1:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path2:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path3:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+              path2:
+                sentences: []
+                names: []
+                sprites: []
+                background: {fileID: 0}
+                sceneTransition: 0
+                sceneName: 
+                prompt: 0
+                question:
+                  correctAnswer: 
+                  option1: 
+                  option2: 
+                  option3: 
+                  path1:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path2:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path3:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+              path3:
+                sentences: []
+                names: []
+                sprites: []
+                background: {fileID: 0}
+                sceneTransition: 0
+                sceneName: 
+                prompt: 0
+                question:
+                  correctAnswer: 
+                  option1: 
+                  option2: 
+                  option3: 
+                  path1:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path2:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path3:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+          path3:
+            sentences: []
+            names: []
+            sprites: []
+            background: {fileID: 0}
+            sceneTransition: 0
+            sceneName: 
+            prompt: 0
+            question:
+              correctAnswer: 
+              option1: 
+              option2: 
+              option3: 
+              path1:
+                sentences: []
+                names: []
+                sprites: []
+                background: {fileID: 0}
+                sceneTransition: 0
+                sceneName: 
+                prompt: 0
+                question:
+                  correctAnswer: 
+                  option1: 
+                  option2: 
+                  option3: 
+                  path1:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path2:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path3:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+              path2:
+                sentences: []
+                names: []
+                sprites: []
+                background: {fileID: 0}
+                sceneTransition: 0
+                sceneName: 
+                prompt: 0
+                question:
+                  correctAnswer: 
+                  option1: 
+                  option2: 
+                  option3: 
+                  path1:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path2:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path3:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+              path3:
+                sentences: []
+                names: []
+                sprites: []
+                background: {fileID: 0}
+                sceneTransition: 0
+                sceneName: 
+                prompt: 0
+                question:
+                  correctAnswer: 
+                  option1: 
+                  option2: 
+                  option3: 
+                  path1:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path2:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                  path3:
+                    sentences: []
+                    names: []
+                    sprites: []
+                    background: {fileID: 0}
+                    sceneTransition: 0
+                    sceneName: 
+                    prompt: 0
+                    question:
+                      correctAnswer: 
+                      option1: 
+                      option2: 
+                      option3: 
+                      path1:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path2:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+                      path3:
+                        sceneTransition: 0
+                        sceneName: 
+                        prompt: 0
+--- !u!61 &560547301
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560547299}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.31735492}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.72, y: 1.44}
+    newSize: {x: 0.72, y: 1.44}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.72, y: 0.8052902}
+  m_EdgeRadius: 0
+--- !u!212 &560547302
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560547299}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 31f42aaf7003f84e88486fe5666abdf6, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.72, y: 1.44}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &560547303
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560547299}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.41783, y: -1.8276603, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &663782500
 GameObject:
   m_ObjectHideFlags: 0
@@ -3918,6 +6628,72 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1445955147
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1445955150}
+  - component: {fileID: 1445955149}
+  - component: {fileID: 1445955148}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1445955148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445955147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1445955149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445955147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &1445955150
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445955147}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1447833129
 GameObject:
   m_ObjectHideFlags: 0
@@ -5847,6 +8623,49 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.44, y: 1.44}
   m_EdgeRadius: 0
+--- !u!1 &2103201096
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2103201098}
+  - component: {fileID: 2103201097}
+  m_Layer: 0
+  m_Name: Scene Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2103201097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103201096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32a0b043e55b6f6479e02ad6c7852755, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &2103201098
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103201096}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.3153152, y: -0.59578025, z: -16.931293}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2104298818
 GameObject:
   m_ObjectHideFlags: 0
@@ -9888,6 +12707,105 @@ Transform:
   m_Father: {fileID: 1858613300979625253}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &7912194420711872561
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1281285337130398527, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
+        type: 3}
+      propertyPath: m_Name
+      value: Dialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1281285337130398527, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2304646184085234639, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2304646184085234639, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2304646184085234639, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -18670.727
+      objectReference: {fileID: 0}
+    - target: {fileID: 2304646184085234639, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2304646184085234639, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2304646184085234639, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2304646184085234639, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2304646184085234639, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2304646184085234639, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2304646184085234639, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2304646184085234639, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3093692496467610937, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.001953125
+      objectReference: {fileID: 0}
+    - target: {fileID: 7173439031315856910, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.0292969
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947053191192394092, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 19.27246
+      objectReference: {fileID: 0}
+    - target: {fileID: 8133156263933225071, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 6058011615048966359}
+    - target: {fileID: 8707610799034156870, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 6058011615048966359}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b, type: 3}
 --- !u!95 &8281587622404842080
 Animator:
   serializedVersion: 3
