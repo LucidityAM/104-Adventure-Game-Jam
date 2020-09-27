@@ -567,7 +567,9 @@ MonoBehaviour:
     names:
     - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
     - {fileID: 21300000, guid: 2fa3be7cbab091240a1fa5c30e2831bb, type: 3}
-    sprites: []
+    sprites:
+    - EmmieNeutral
+    - Angrie
     background: {fileID: 0}
     sceneTransition: 0
     sceneName: 
@@ -584,7 +586,9 @@ MonoBehaviour:
         names:
         - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
         - {fileID: 21300000, guid: 2fa3be7cbab091240a1fa5c30e2831bb, type: 3}
-        sprites: []
+        sprites:
+        - EmmieNeutral
+        - Angrie
         background: {fileID: 0}
         sceneTransition: 0
         sceneName: 
@@ -601,7 +605,9 @@ MonoBehaviour:
             names:
             - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
             - {fileID: 21300000, guid: 2fa3be7cbab091240a1fa5c30e2831bb, type: 3}
-            sprites: []
+            sprites:
+            - EmmieNeutral
+            - Angrie
             background: {fileID: 0}
             sceneTransition: 0
             sceneName: 
@@ -618,7 +624,9 @@ MonoBehaviour:
                 names:
                 - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
                 - {fileID: 21300000, guid: 2fa3be7cbab091240a1fa5c30e2831bb, type: 3}
-                sprites: []
+                sprites:
+                - EmmieNeutral
+                - Angrie
                 background: {fileID: 0}
                 sceneTransition: 0
                 sceneName: 
@@ -638,7 +646,9 @@ MonoBehaviour:
                     names:
                     - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
                     - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
-                    sprites: []
+                    sprites:
+                    - EmmieNeutral
+                    - EmmieNeutral
                     background: {fileID: 0}
                     sceneTransition: 1
                     sceneName: Bedroom
@@ -665,7 +675,9 @@ MonoBehaviour:
                     - I can't do this anymore...
                     names:
                     - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
-                    sprites: []
+                    sprites:
+                    - EmmieNeutral
+                    - Angrie
                     background: {fileID: 0}
                     sceneTransition: 1
                     sceneName: Kitchen
@@ -692,7 +704,8 @@ MonoBehaviour:
                     - I can't do this anymore...
                     names:
                     - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
-                    sprites: []
+                    sprites:
+                    - EmmieNeutral
                     background: {fileID: 0}
                     sceneTransition: 1
                     sceneName: Kitchen
@@ -809,7 +822,8 @@ MonoBehaviour:
                 - I can't do this anymore...
                 names:
                 - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
-                sprites: []
+                sprites:
+                - EmmieNeutral
                 background: {fileID: 0}
                 sceneTransition: 1
                 sceneName: Kitchen
@@ -899,7 +913,8 @@ MonoBehaviour:
             - I can't do this anymore...
             names:
             - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
-            sprites: []
+            sprites:
+            - EmmieNeutral
             background: {fileID: 0}
             sceneTransition: 1
             sceneName: Kitchen
@@ -1178,7 +1193,8 @@ MonoBehaviour:
             - I can't do this anymore...
             names:
             - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
-            sprites: []
+            sprites:
+            - EmmieNeutral
             background: {fileID: 0}
             sceneTransition: 1
             sceneName: Kitchen
@@ -7362,10 +7378,30 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3662166300494509428, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2.8500977
+      objectReference: {fileID: 0}
+    - target: {fileID: 3662166300494509428, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.16992188
+      objectReference: {fileID: 0}
     - target: {fileID: 4674282452972147049, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5211193700072336965, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 5.3999023
+      objectReference: {fileID: 0}
+    - target: {fileID: 5211193700072336965, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1.8999023
       objectReference: {fileID: 0}
     - target: {fileID: 6914869951393996065, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
         type: 3}

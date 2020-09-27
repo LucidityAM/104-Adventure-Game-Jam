@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: EmmieNeutral
+  m_Name: Bunnie
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,9 +20,9 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300000, guid: c7e8677ff1cfb404b93981e8efe262bb, type: 3}
+      value: {fileID: 21300000, guid: 9da56d3528e775842884f979ef142e42, type: 3}
     - time: 0.083333336
-      value: {fileID: 21300000, guid: 951dcf11565c0014c9c0bddd2b292803, type: 3}
+      value: {fileID: 21300000, guid: dc352ed0f8d25604f9fdb68194ac50ff, type: 3}
     attribute: m_Sprite
     path: 
     classID: 114
@@ -42,8 +42,8 @@ AnimationClip:
       customType: 0
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300000, guid: c7e8677ff1cfb404b93981e8efe262bb, type: 3}
-    - {fileID: 21300000, guid: 951dcf11565c0014c9c0bddd2b292803, type: 3}
+    - {fileID: 21300000, guid: 9da56d3528e775842884f979ef142e42, type: 3}
+    - {fileID: 21300000, guid: dc352ed0f8d25604f9fdb68194ac50ff, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -2175,7 +2175,13 @@ MonoBehaviour:
     - {fileID: 21300000, guid: e1f5b6a690fc9564eb71a6858e18493b, type: 3}
     - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
     - {fileID: 21300000, guid: e1f5b6a690fc9564eb71a6858e18493b, type: 3}
-    sprites: []
+    sprites:
+    - EmmieNeutral
+    - Mopie
+    - EmmieNeutral
+    - Mopie
+    - EmmieNeutral
+    - Mopie
     background: {fileID: 0}
     sceneTransition: 0
     sceneName: 
@@ -2192,7 +2198,9 @@ MonoBehaviour:
         names:
         - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
         - {fileID: 21300000, guid: e1f5b6a690fc9564eb71a6858e18493b, type: 3}
-        sprites: []
+        sprites:
+        - EmmieNeutral
+        - Mopie
         background: {fileID: 0}
         sceneTransition: 0
         sceneName: 
@@ -2209,7 +2217,9 @@ MonoBehaviour:
             names:
             - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
             - {fileID: 21300000, guid: e1f5b6a690fc9564eb71a6858e18493b, type: 3}
-            sprites: []
+            sprites:
+            - EmmieNeutral
+            - Mopie
             background: {fileID: 0}
             sceneTransition: 0
             sceneName: 
@@ -2226,7 +2236,9 @@ MonoBehaviour:
                 names:
                 - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
                 - {fileID: 21300000, guid: e1f5b6a690fc9564eb71a6858e18493b, type: 3}
-                sprites: []
+                sprites:
+                - EmmieNeutral
+                - Mopie
                 background: {fileID: 0}
                 sceneTransition: 0
                 sceneName: 
@@ -2241,7 +2253,8 @@ MonoBehaviour:
                     - I can't do this anymore...
                     names:
                     - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
-                    sprites: []
+                    sprites:
+                    - EmmieNeutral
                     background: {fileID: 0}
                     sceneTransition: 1
                     sceneName: Living Room
@@ -2270,7 +2283,8 @@ MonoBehaviour:
                       are my actions in the present moment."
                     names:
                     - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
-                    sprites: []
+                    sprites:
+                    - EmmieNeutral
                     background: {fileID: 0}
                     sceneTransition: 1
                     sceneName: Kitchen
@@ -2297,7 +2311,8 @@ MonoBehaviour:
                     - I can't do this anymore...
                     names:
                     - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
-                    sprites: []
+                    sprites:
+                    - EmmieNeutral
                     background: {fileID: 0}
                     sceneTransition: 1
                     sceneName: Living Room
@@ -2324,7 +2339,8 @@ MonoBehaviour:
                 - I can't do this anymore...
                 names:
                 - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
-                sprites: []
+                sprites:
+                - EmmieNeutral
                 background: {fileID: 0}
                 sceneTransition: 1
                 sceneName: Living Room
@@ -2414,7 +2430,8 @@ MonoBehaviour:
                 - I can't do this anymore...
                 names:
                 - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
-                sprites: []
+                sprites:
+                - EmmieNeutral
                 background: {fileID: 0}
                 sceneTransition: 1
                 sceneName: Living Room
@@ -2504,7 +2521,8 @@ MonoBehaviour:
             - I can't do this anymore...
             names:
             - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
-            sprites: []
+            sprites:
+            - EmmieNeutral
             background: {fileID: 0}
             sceneTransition: 1
             sceneName: Living Room
@@ -2783,7 +2801,8 @@ MonoBehaviour:
             - I can't do this anymore...
             names:
             - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
-            sprites: []
+            sprites:
+            - EmmieNeutral
             background: {fileID: 0}
             sceneTransition: 1
             sceneName: Living Room
@@ -3062,7 +3081,8 @@ MonoBehaviour:
         - I can't do this anymore...
         names:
         - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
-        sprites: []
+        sprites:
+        - EmmieNeutral
         background: {fileID: 0}
         sceneTransition: 1
         sceneName: Living Room
@@ -3906,8 +3926,10 @@ MonoBehaviour:
       path3:
         sentences:
         - I can't do this anymore...
-        names: []
-        sprites: []
+        names:
+        - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
+        sprites:
+        - EmmieNeutral
         background: {fileID: 0}
         sceneTransition: 1
         sceneName: Living Room
@@ -11904,6 +11926,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1570242577348069865, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -412.00012
+      objectReference: {fileID: 0}
     - target: {fileID: 2304646184085234639, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11942,7 +11969,7 @@ PrefabInstance:
     - target: {fileID: 2304646184085234639, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2304646184085234639, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
         type: 3}
@@ -11964,6 +11991,41 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 0.001953125
       objectReference: {fileID: 0}
+    - target: {fileID: 3662166300494509428, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2.8500977
+      objectReference: {fileID: 0}
+    - target: {fileID: 3662166300494509428, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.16992188
+      objectReference: {fileID: 0}
+    - target: {fileID: 4074049178370960806, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -507.00012
+      objectReference: {fileID: 0}
+    - target: {fileID: 4544503059889325007, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -436.00012
+      objectReference: {fileID: 0}
+    - target: {fileID: 5211193700072336965, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 6.040039
+      objectReference: {fileID: 0}
+    - target: {fileID: 5211193700072336965, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.16992188
+      objectReference: {fileID: 0}
+    - target: {fileID: 6952307424480248226, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1837.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7173439031315856910, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -11974,11 +12036,21 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 19.27246
       objectReference: {fileID: 0}
+    - target: {fileID: 7947053191192394092, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1804
+      objectReference: {fileID: 0}
     - target: {fileID: 8133156263933225071, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
         type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 6058011615048966359}
+    - target: {fileID: 8526445184090341099, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1024
+      objectReference: {fileID: 0}
     - target: {fileID: 8707610799034156870, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
         type: 3}
       propertyPath: m_Camera

@@ -182,6 +182,8 @@ public class DialogueManager : MonoBehaviour
         nameRight.SetActive(true);
         BlueLine.SetActive(true);
         RedLine.SetActive(true);
+        characterRightSprite.enabled = true;
+        characterLeftSprite.enabled = true;
         #endregion
 
         dialogueText.text = "";
@@ -324,6 +326,10 @@ public class DialogueManager : MonoBehaviour
         {
             characterLeftSprite.SetBool("isOpen", false);
             characterRightSprite.SetBool("isOpen", false);
+            characterRightSprite.enabled = false;
+            characterLeftSprite.enabled = false;
+            characterLeft.SetActive(false);
+            characterRight.SetActive(false);
             StartCoroutine(FindObjectOfType<QuestionManager>().StartQuestion(question));
         }
         else
@@ -344,6 +350,8 @@ public class DialogueManager : MonoBehaviour
             //yield return new WaitForSeconds(0.05f);
             RedLineAnim.SetBool("isOpen", false);
 
+            characterLeft.SetActive(false);
+            characterRight.SetActive(false);
             yield return new WaitForSeconds(2f);
             //Diables all GameObjects
             BG.SetActive(false);
@@ -359,6 +367,8 @@ public class DialogueManager : MonoBehaviour
 
             if(sceneTransition == true)
             {
+                characterLeft.SetActive(false);
+                characterRight.SetActive(false);
                 FindObjectOfType<LoadingScene>().LoadSceneLevel(sceneName);
             }
         }
