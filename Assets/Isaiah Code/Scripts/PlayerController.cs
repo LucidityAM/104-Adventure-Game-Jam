@@ -121,7 +121,6 @@ public class PlayerController : MonoBehaviour
 
             if (relativePosition.y > 0)
             {
-                Debug.Log("up");
                 if (!Physics2D.OverlapCircle(collision.transform.position + new Vector3(0f, (Input.GetAxisRaw("Vertical") * .72f), 0f), .3f, whatStopsMovement) &&
                 !Physics2D.OverlapCircle(collision.transform.position + new Vector3(0f, (Input.GetAxisRaw("Vertical") * .72f), 0f), .2f, moveableObjects))
                 {
@@ -136,7 +135,6 @@ public class PlayerController : MonoBehaviour
             {
                 if (relativePosition.x < 0)
                 {
-                    Debug.Log("left");
                     if (!Physics2D.OverlapCircle(collision.transform.position + new Vector3((Input.GetAxisRaw("Horizontal") * .72f), 0f, 0f), .3f, whatStopsMovement) &&
                     !Physics2D.OverlapCircle(collision.transform.position + new Vector3((Input.GetAxisRaw("Horizontal") * .72f), 0f, 0f), .2f, moveableObjects))
                     {
@@ -150,8 +148,6 @@ public class PlayerController : MonoBehaviour
                 }
                 else if (relativePosition.x > 0)
                 {
-                    Debug.Log("right");
-
                     if (!Physics2D.OverlapCircle(collision.transform.position + new Vector3((Input.GetAxisRaw("Horizontal") * .72f), 0f, 0f), .3f, whatStopsMovement) &&
                     !Physics2D.OverlapCircle(collision.transform.position + new Vector3((Input.GetAxisRaw("Horizontal") * .72f), 0f, 0f), .2f, moveableObjects))
                     {
@@ -168,8 +164,6 @@ public class PlayerController : MonoBehaviour
             }
             else if (relativePosition.y < 0)
             {
-                Debug.Log("down");
-
                 if (!Physics2D.OverlapCircle(collision.transform.position + new Vector3(0f, (Input.GetAxisRaw("Vertical") * .72f), 0f), .3f, whatStopsMovement) &&
                 !Physics2D.OverlapCircle(collision.transform.position + new Vector3(0f, (Input.GetAxisRaw("Vertical") * .72f), 0f), .2f, moveableObjects))
                 {
