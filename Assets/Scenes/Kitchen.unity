@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -563,7 +563,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     sentences:
-    - '...'
+    - ...
     - Doesn't it make you angry?
     names:
     - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
@@ -617,7 +617,7 @@ MonoBehaviour:
               correctAnswer: 
               option1: What good would that do?
               option2: Must be the only way!
-              option3: '...'
+              option3: ...
               path1:
                 sentences:
                 - And what good would that do?
@@ -641,9 +641,9 @@ MonoBehaviour:
                     sentences:
                     - "Pursuing violence in the name of some kind of \u201Crevenge\u201D...That
                       would make me feel worse. "
-                    - "I refuse to be a product of their abuse. I have to accept that
-                      I am a victim, and accepting that doesn\u2019t mean I can\u2019t
-                      still heal."
+                    - "I refuse to be a product of their abuse. I have to accept
+                      that I am a victim, and accepting that doesn\u2019t mean I
+                      can\u2019t still heal."
                     names:
                     - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
                     - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
