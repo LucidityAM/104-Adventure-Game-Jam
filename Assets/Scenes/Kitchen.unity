@@ -563,7 +563,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     sentences:
-    - ...
+    - '...'
     - Doesn't it make you angry?
     names:
     - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
@@ -617,7 +617,7 @@ MonoBehaviour:
               correctAnswer: 
               option1: What good would that do?
               option2: Must be the only way!
-              option3: ...
+              option3: '...'
               path1:
                 sentences:
                 - And what good would that do?
@@ -641,9 +641,9 @@ MonoBehaviour:
                     sentences:
                     - "Pursuing violence in the name of some kind of \u201Crevenge\u201D...That
                       would make me feel worse. "
-                    - "I refuse to be a product of their abuse. I have to accept
-                      that I am a victim, and accepting that doesn\u2019t mean I
-                      can\u2019t still heal."
+                    - "I refuse to be a product of their abuse. I have to accept that
+                      I am a victim, and accepting that doesn\u2019t mean I can\u2019t
+                      still heal."
                     names:
                     - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
                     - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
@@ -4334,6 +4334,7 @@ MonoBehaviour:
   popup: {fileID: 810355388}
   imageToAppear: {fileID: 21300000, guid: 4531b21489bafac41a782377808804e3, type: 3}
   playerController: {fileID: 2264600794627421462}
+  menu: {fileID: 1380092153}
 --- !u!1 &484979807
 GameObject:
   m_ObjectHideFlags: 0
@@ -5842,6 +5843,7 @@ MonoBehaviour:
   popup: {fileID: 810355388}
   imageToAppear: {fileID: 21300000, guid: cf958bc9f124bf047b4fc2e33538b0da, type: 3}
   playerController: {fileID: 2264600794627421462}
+  menu: {fileID: 1380092153}
 --- !u!1 &1324987000
 GameObject:
   m_ObjectHideFlags: 0
@@ -6281,6 +6283,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca6884a50d5a0c64d84236e456b60095, type: 3}
+--- !u!114 &1380092153 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4081265788394712632, guid: ca6884a50d5a0c64d84236e456b60095,
+    type: 3}
+  m_PrefabInstance: {fileID: 1380092152}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43e6de47326e83844a57a5683bf01fe0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1386637738
 GameObject:
   m_ObjectHideFlags: 0
@@ -7600,6 +7614,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7021148764422980396, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 2264600794627421462}
     - target: {fileID: 8133156263933225071, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
         type: 3}
       propertyPath: m_Camera

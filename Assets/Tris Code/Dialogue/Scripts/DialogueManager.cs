@@ -42,7 +42,7 @@ public class DialogueManager : MonoBehaviour
     private Queue<string> sprites;
 
     //Player access for preventing movement
-
+    public PlayerController player;
 
     //private question to trigger a question at the end of dialogue
     private Question question;
@@ -149,7 +149,7 @@ public class DialogueManager : MonoBehaviour
         question = dialogue.question;
 
         //Player stopping happens HERE
-
+        player.enabled = false;
 
         //setting up queues from dialogue into queue for the whole script
         //NAMES
@@ -364,13 +364,13 @@ public class DialogueManager : MonoBehaviour
             BlueLine.SetActive(false);
             RedLine.SetActive(false);
             #endregion
-
             if(sceneTransition == true)
             {
                 characterLeft.SetActive(false);
                 characterRight.SetActive(false);
                 FindObjectOfType<LoadingScene>().LoadSceneLevel(sceneName);
             }
+            player.enabled = true;
         }
     }
 

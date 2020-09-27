@@ -12,6 +12,7 @@ public class ItemPopup : MonoBehaviour
     public Sprite imageToAppear;
 
     public PlayerController playerController;
+    public MainMenu menu;
 
     private Animator anim;
 
@@ -29,6 +30,7 @@ public class ItemPopup : MonoBehaviour
         {
             if (isOpen == false)
             {
+                menu.enabled = false;
                 popup.SetActive(true);
                 anim.SetBool("FadeOut", true);
                 popup.GetComponent<Image>().sprite = imageToAppear;
@@ -54,7 +56,7 @@ public class ItemPopup : MonoBehaviour
     public IEnumerator Enable()
     {
         yield return new WaitForSeconds(1.5f);
-
+        menu.enabled = true;
         popup.SetActive(false);
         playerController.enabled = true;
         isOpen = false;

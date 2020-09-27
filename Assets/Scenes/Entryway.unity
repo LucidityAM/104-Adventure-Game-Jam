@@ -261,6 +261,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1281285337130398527, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1570242577348069865, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -371,6 +376,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -1837.5
       objectReference: {fileID: 0}
+    - target: {fileID: 7021148764422980396, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 2809258151005149283}
     - target: {fileID: 7947053191192394092, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -394,7 +404,7 @@ PrefabInstance:
     - target: {fileID: 8133156263933225071, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 2001
+      value: 201
       objectReference: {fileID: 0}
     - target: {fileID: 8261234574154163747, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
         type: 3}
@@ -4292,6 +4302,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4081265788625091931, guid: ca6884a50d5a0c64d84236e456b60095,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4081265788625091932, guid: ca6884a50d5a0c64d84236e456b60095,
         type: 3}
       propertyPath: m_Camera
@@ -4300,7 +4315,7 @@ PrefabInstance:
     - target: {fileID: 4081265788625091932, guid: ca6884a50d5a0c64d84236e456b60095,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 202
+      value: 203
       objectReference: {fileID: 0}
     - target: {fileID: 4081265788625091935, guid: ca6884a50d5a0c64d84236e456b60095,
         type: 3}
@@ -6326,8 +6341,7 @@ MonoBehaviour:
       driving to this place.
     - "Just shut up! Look, we don\u2019t have a clue what happened to those two after
       we ran away, but we know they\u2019re not here anymore."
-    - "Clearly. Look at this place, it\u2019s even more hellish than it was as a
-      kid!\r\n"
+    - "Clearly. Look at this place, it\u2019s even more hellish than it was as a kid!\r\n"
     - "Which is exactly why I didn\u2019t want to come back, but here we are."
     - 'Think about it guys: what if we just need to look at this place one last time
       to figure out why this happened to us? Why did we have to go through this?'
@@ -6339,7 +6353,7 @@ MonoBehaviour:
     - "Cool it, hotshot, I don\u2019t care about your little revenge plot. You know,
       there\u2019s someone I haven\u2019t heard anything from. What do you have to
       say about all this, hm?"
-    - ...
+    - '...'
     - "Right. I don\u2019t know what I expected. Whatever, let\u2019s just get on
       with it then. "
     names:
