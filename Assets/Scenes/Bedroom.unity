@@ -3116,8 +3116,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     sentences:
-    - ...
-    - ...Ready...?
+    - '...'
+    - '...Ready...?'
     names:
     - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
     - {fileID: 21300000, guid: 0154163aeea5a1945afeb965a6fdcd2a, type: 3}
@@ -3983,7 +3983,7 @@ MonoBehaviour:
       path2:
         sentences:
         - 'It''s time to move on. '
-        - ...Forget this all happened?
+        - '...Forget this all happened?'
         names:
         - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
         - {fileID: 21300000, guid: 0154163aeea5a1945afeb965a6fdcd2a, type: 3}
@@ -4007,7 +4007,7 @@ MonoBehaviour:
             sprites: []
             background: {fileID: 0}
             sceneTransition: 1
-            sceneName: 
+            sceneName: Bedroom
             prompt: 0
             question:
               correctAnswer: 
@@ -4286,7 +4286,7 @@ MonoBehaviour:
             sprites: []
             background: {fileID: 0}
             sceneTransition: 1
-            sceneName: 
+            sceneName: Bedroom
             prompt: 0
             question:
               correctAnswer: 
@@ -4560,7 +4560,7 @@ MonoBehaviour:
           path3:
             sentences:
             - You can't  just forget bad things.
-            - ...Get rid of us...?
+            - '...Get rid of us...?'
             names:
             - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
             - {fileID: 21300000, guid: 0154163aeea5a1945afeb965a6fdcd2a, type: 3}
@@ -4579,7 +4579,7 @@ MonoBehaviour:
               path1:
                 sentences:
                 - I could never just let you go.
-                - ...Being alone?
+                - '...Being alone?'
                 names:
                 - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
                 - {fileID: 21300000, guid: 0154163aeea5a1945afeb965a6fdcd2a, type: 3}
@@ -4604,7 +4604,7 @@ MonoBehaviour:
                     - EmmieNeutral
                     background: {fileID: 0}
                     sceneTransition: 1
-                    sceneName: 
+                    sceneName: Bedroom
                     prompt: 0
                     question:
                       correctAnswer: 
@@ -4625,9 +4625,9 @@ MonoBehaviour:
                         prompt: 0
                   path2:
                     sentences:
-                    - "You are all a part of me, and whether or not we agree all
-                      the time doesn\u2019t matter. I love and accept you for who
-                      you are, and who I am."
+                    - "You are all a part of me, and whether or not we agree all the
+                      time doesn\u2019t matter. I love and accept you for who you
+                      are, and who I am."
                     - "But...maybe it\u2019s time we move on from this place, okay?"
                     names:
                     - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
@@ -4637,7 +4637,7 @@ MonoBehaviour:
                     - EmmieNeutral
                     background: {fileID: 0}
                     sceneTransition: 1
-                    sceneName: 
+                    sceneName: Credits
                     prompt: 0
                     question:
                       correctAnswer: 
@@ -4665,7 +4665,7 @@ MonoBehaviour:
                     - EmmieNeutral
                     background: {fileID: 0}
                     sceneTransition: 1
-                    sceneName: 
+                    sceneName: Bedroom
                     prompt: 0
                     question:
                       correctAnswer: 
