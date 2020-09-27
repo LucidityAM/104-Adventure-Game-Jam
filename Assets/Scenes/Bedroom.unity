@@ -241,7 +241,7 @@ PrefabInstance:
     - target: {fileID: 3677025464400090003, guid: 0b546b6b19423774fb5086f83be03723,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4969999887610289903, guid: 0b546b6b19423774fb5086f83be03723,
         type: 3}
@@ -636,7 +636,7 @@ PrefabInstance:
     - target: {fileID: 1281285337130398527, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2304646184085234639, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
         type: 3}
@@ -696,7 +696,7 @@ PrefabInstance:
     - target: {fileID: 3662166300494509428, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 2.8500977
+      value: 2.850586
       objectReference: {fileID: 0}
     - target: {fileID: 3662166300494509428, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
         type: 3}
@@ -706,13 +706,18 @@ PrefabInstance:
     - target: {fileID: 5211193700072336965, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 5.3999023
+      value: 5.399414
       objectReference: {fileID: 0}
     - target: {fileID: 5211193700072336965, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -1.8999023
       objectReference: {fileID: 0}
+    - target: {fileID: 7021148764422980396, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1230772985}
     - target: {fileID: 8133156263933225071, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
         type: 3}
       propertyPath: m_Camera
@@ -2902,8 +2907,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     sentences:
-    - '...'
-    - '...Ready...?'
+    - ...
+    - ...Ready...?
     names:
     - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
     - {fileID: 21300000, guid: 0154163aeea5a1945afeb965a6fdcd2a, type: 3}
@@ -3769,7 +3774,7 @@ MonoBehaviour:
       path2:
         sentences:
         - 'It''s time to move on. '
-        - '...Forget this all happened?'
+        - ...Forget this all happened?
         names:
         - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
         - {fileID: 21300000, guid: 0154163aeea5a1945afeb965a6fdcd2a, type: 3}
@@ -4346,7 +4351,7 @@ MonoBehaviour:
           path3:
             sentences:
             - You can't  just forget bad things.
-            - '...Get rid of us...?'
+            - ...Get rid of us...?
             names:
             - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
             - {fileID: 21300000, guid: 0154163aeea5a1945afeb965a6fdcd2a, type: 3}
@@ -4365,7 +4370,7 @@ MonoBehaviour:
               path1:
                 sentences:
                 - I could never just let you go.
-                - '...Being alone?'
+                - ...Being alone?
                 names:
                 - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
                 - {fileID: 21300000, guid: 0154163aeea5a1945afeb965a6fdcd2a, type: 3}
@@ -4411,9 +4416,9 @@ MonoBehaviour:
                         prompt: 0
                   path2:
                     sentences:
-                    - "You are all a part of me, and whether or not we agree all the
-                      time doesn\u2019t matter. I love and accept you for who you
-                      are, and who I am."
+                    - "You are all a part of me, and whether or not we agree all
+                      the time doesn\u2019t matter. I love and accept you for who
+                      you are, and who I am."
                     - "But...maybe it\u2019s time we move on from this place, okay?"
                     names:
                     - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
@@ -5586,7 +5591,7 @@ Transform:
   m_LocalScale: {x: 0.50491184, y: 0.43778127, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1162473754
 GameObject:
@@ -5844,7 +5849,7 @@ MonoBehaviour:
     m_Bits: 512
   anim: {fileID: 1230772986}
   vertPosition: 0
-  moveNumberForScene: 25
+  moveNumberForScene: 40
 --- !u!95 &1230772986
 Animator:
   serializedVersion: 3
@@ -6311,7 +6316,7 @@ PrefabInstance:
     - target: {fileID: 4081265788625091931, guid: ca6884a50d5a0c64d84236e456b60095,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4081265788625091932, guid: ca6884a50d5a0c64d84236e456b60095,
         type: 3}
@@ -6430,6 +6435,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca6884a50d5a0c64d84236e456b60095, type: 3}
+--- !u!114 &1292562788 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4081265788394712632, guid: ca6884a50d5a0c64d84236e456b60095,
+    type: 3}
+  m_PrefabInstance: {fileID: 1292562787}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43e6de47326e83844a57a5683bf01fe0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1389008434
 GameObject:
   m_ObjectHideFlags: 0
@@ -6442,6 +6459,7 @@ GameObject:
   - component: {fileID: 1389008435}
   - component: {fileID: 1389008437}
   - component: {fileID: 1389008438}
+  - component: {fileID: 1389008439}
   m_Layer: 0
   m_Name: Drawings
   m_TagString: Interactable
@@ -6580,6 +6598,22 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1389008439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389008434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19efc3b37a3103b44abb9824dbdcbbac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  popup: {fileID: 1685110423}
+  imageToAppear: {fileID: 21300000, guid: 09fc1561433d0824e8319620148bc677, type: 3}
+  playerController: {fileID: 1230772985}
+  menu: {fileID: 1292562788}
 --- !u!1 &1397907789
 GameObject:
   m_ObjectHideFlags: 0
@@ -7342,6 +7376,7 @@ GameObject:
   - component: {fileID: 1698633653}
   - component: {fileID: 1698633655}
   - component: {fileID: 1698633656}
+  - component: {fileID: 1698633657}
   m_Layer: 0
   m_Name: Bunny
   m_TagString: Interactable
@@ -7454,6 +7489,7 @@ MonoBehaviour:
   popup: {fileID: 1685110423}
   imageToAppear: {fileID: 21300000, guid: 02976524d126f1a47b64c768d894cce3, type: 3}
   playerController: {fileID: 1230772985}
+  menu: {fileID: 0}
 --- !u!114 &1698633656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7495,6 +7531,22 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1698633657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698633651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19efc3b37a3103b44abb9824dbdcbbac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  popup: {fileID: 1685110423}
+  imageToAppear: {fileID: 21300000, guid: 02976524d126f1a47b64c768d894cce3, type: 3}
+  playerController: {fileID: 1230772985}
+  menu: {fileID: 1292562788}
 --- !u!1 &1712492694
 GameObject:
   m_ObjectHideFlags: 0

@@ -2167,7 +2167,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     sentences:
-    - '...'
+    - ...
     - 'You have to find out why they left you. '
     - I...do?
     - What can you even remember about them?
@@ -2284,9 +2284,9 @@ MonoBehaviour:
                         prompt: 0
                   path2:
                     sentences:
-                    - "Certainty is a trap. I can\u2019t control what might have been
-                      in the past, and what might be in the future. What matters are
-                      my actions in the present moment."
+                    - "Certainty is a trap. I can\u2019t control what might have
+                      been in the past, and what might be in the future. What matters
+                      are my actions in the present moment."
                     names:
                     - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
                     sprites:
@@ -5998,6 +5998,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca6884a50d5a0c64d84236e456b60095, type: 3}
+--- !u!114 &1236476673 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4081265788394712632, guid: ca6884a50d5a0c64d84236e456b60095,
+    type: 3}
+  m_PrefabInstance: {fileID: 1236476672}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43e6de47326e83844a57a5683bf01fe0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1264725716
 GameObject:
   m_ObjectHideFlags: 0
@@ -7469,6 +7481,7 @@ MonoBehaviour:
   popup: {fileID: 1560796225}
   imageToAppear: {fileID: 21300000, guid: e91955a50c030ea48bb9faf0f47948df, type: 3}
   playerController: {fileID: 8281587622404842082}
+  menu: {fileID: 1236476673}
 --- !u!61 &1798017066
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8383,6 +8396,7 @@ MonoBehaviour:
   popup: {fileID: 1560796225}
   imageToAppear: {fileID: 21300000, guid: fccb34e403ee8724bbfb762d7ce97b28, type: 3}
   playerController: {fileID: 8281587622404842082}
+  menu: {fileID: 1236476673}
 --- !u!61 &2050322064
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12091,7 +12105,7 @@ PrefabInstance:
     - target: {fileID: 1570242577348069865, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -412.00006
+      value: -412
       objectReference: {fileID: 0}
     - target: {fileID: 2304646184085234639, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
         type: 3}
@@ -12166,12 +12180,12 @@ PrefabInstance:
     - target: {fileID: 4074049178370960806, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -507.00006
+      value: -507
       objectReference: {fileID: 0}
     - target: {fileID: 4544503059889325007, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -436.00006
+      value: -436
       objectReference: {fileID: 0}
     - target: {fileID: 5211193700072336965, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
         type: 3}
@@ -12188,6 +12202,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -1837.5
       objectReference: {fileID: 0}
+    - target: {fileID: 7021148764422980396, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 8281587622404842082}
     - target: {fileID: 7173439031315856910, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
         type: 3}
       propertyPath: m_AnchoredPosition.x
