@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -760,12 +760,7 @@ PrefabInstance:
     - target: {fileID: 2552823494958632018, guid: 0b546b6b19423774fb5086f83be03723,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 2552823494958632018, guid: 0b546b6b19423774fb5086f83be03723,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2552823494958632018, guid: 0b546b6b19423774fb5086f83be03723,
         type: 3}
@@ -1656,12 +1651,7 @@ PrefabInstance:
     - target: {fileID: 3679485825954159455, guid: b8279b41133c72d4c876e9060bf4addf,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 3679485825954159455, guid: b8279b41133c72d4c876e9060bf4addf,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3679485825954159455, guid: b8279b41133c72d4c876e9060bf4addf,
         type: 3}
@@ -2171,7 +2161,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     sentences:
-    - '...'
+    - ...
     - 'You have to find out why they left you. '
     - I...do?
     - What can you even remember about them?
@@ -2275,9 +2265,9 @@ MonoBehaviour:
                         prompt: 0
                   path2:
                     sentences:
-                    - "Certainty is a trap. I can\u2019t control what might have been
-                      in the past, and what might be in the future. What matters are
-                      my actions in the present moment."
+                    - "Certainty is a trap. I can\u2019t control what might have
+                      been in the past, and what might be in the future. What matters
+                      are my actions in the present moment."
                     names:
                     - {fileID: 21300000, guid: bf17512d5ad32bf4ca6d61d126e3582b, type: 3}
                     sprites: []
@@ -4846,7 +4836,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &663782500
 GameObject:
@@ -6233,7 +6223,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1376987400
 GameObject:
@@ -6407,7 +6397,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1447833129
 GameObject:
@@ -8084,7 +8074,7 @@ GameObject:
   - component: {fileID: 2050322063}
   m_Layer: 0
   m_Name: TV
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8276,7 +8266,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2104298818
 GameObject:
