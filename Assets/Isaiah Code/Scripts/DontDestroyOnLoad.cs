@@ -4,9 +4,21 @@ using UnityEngine;
 
 public class DontDestroyOnLoad : MonoBehaviour
 {
-    
+
+    public bool Started;
+
     public void Start()
     {
-        DontDestroyOnLoad(this.gameObject);
+        if (MoveNumber.musicStarted == false)
+        {
+            DontDestroyOnLoad(this.gameObject);
+            MoveNumber.musicStarted = true;
+            Started = true;
+        }
+
+        if(Started == false)
+        {
+            gameObject.GetComponent<AudioSource>().enabled = false;
+        }
     }
 }

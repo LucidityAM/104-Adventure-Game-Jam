@@ -9,6 +9,12 @@ public class UIControll : MonoBehaviour
     public Text moveCount;
     public Image redScreen;
     private bool isDead;
+    private string currentScene;
+
+    void Start()
+    {
+        currentScene = SceneManager.GetActiveScene().name;
+    }
 
     void Update()
     {
@@ -42,10 +48,6 @@ public class UIControll : MonoBehaviour
 
         if (isDead || Input.GetKeyDown(KeyCode.R))
         {
-            string currentScene;
-
-            currentScene = SceneManager.GetActiveScene().name;
-
             SceneManager.LoadScene(currentScene);
         }
     }

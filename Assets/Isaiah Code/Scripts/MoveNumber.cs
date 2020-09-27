@@ -5,4 +5,6 @@ using UnityEngine;
 public static class MoveNumber
 {
     public static int moveCount;
+
+    public static bool musicStarted = false;
 }
