@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -259,17 +259,12 @@ PrefabInstance:
     - target: {fileID: 1281285337130398527, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1281285337130398527, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1570242577348069865, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -411.99988
+      value: -411.99994
       objectReference: {fileID: 0}
     - target: {fileID: 2304646184085234639, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
         type: 3}
@@ -344,12 +339,12 @@ PrefabInstance:
     - target: {fileID: 4074049178370960806, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -506.99988
+      value: -507
       objectReference: {fileID: 0}
     - target: {fileID: 4544503059889325007, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -435.99988
+      value: -435.99994
       objectReference: {fileID: 0}
     - target: {fileID: 4674282452972147049, guid: 674f1dc6bc4c5c9408b75d362fbb3e9b,
         type: 3}
@@ -462,7 +457,7 @@ Transform:
   - {fileID: 979750886}
   - {fileID: 619327235}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &46091524
 GameObject:
@@ -534,7 +529,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &49091936
 GameObject:
@@ -1792,7 +1787,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &605391837
 GameObject:
@@ -4295,7 +4290,7 @@ PrefabInstance:
     - target: {fileID: 4081265788625091931, guid: ca6884a50d5a0c64d84236e456b60095,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4081265788625091932, guid: ca6884a50d5a0c64d84236e456b60095,
         type: 3}
@@ -4345,7 +4340,7 @@ PrefabInstance:
     - target: {fileID: 4081265788625091935, guid: ca6884a50d5a0c64d84236e456b60095,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4081265788625091935, guid: ca6884a50d5a0c64d84236e456b60095,
         type: 3}
@@ -4479,7 +4474,7 @@ PrefabInstance:
     - target: {fileID: 3679485825954159455, guid: b8279b41133c72d4c876e9060bf4addf,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3679485825954159455, guid: b8279b41133c72d4c876e9060bf4addf,
         type: 3}
@@ -6308,7 +6303,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1297588916
 MonoBehaviour:
@@ -6331,7 +6326,8 @@ MonoBehaviour:
       driving to this place.
     - "Just shut up! Look, we don\u2019t have a clue what happened to those two after
       we ran away, but we know they\u2019re not here anymore."
-    - "Clearly. Look at this place, it\u2019s even more hellish than it was as a kid!\r\n"
+    - "Clearly. Look at this place, it\u2019s even more hellish than it was as a
+      kid!\r\n"
     - "Which is exactly why I didn\u2019t want to come back, but here we are."
     - 'Think about it guys: what if we just need to look at this place one last time
       to figure out why this happened to us? Why did we have to go through this?'
@@ -6343,7 +6339,7 @@ MonoBehaviour:
     - "Cool it, hotshot, I don\u2019t care about your little revenge plot. You know,
       there\u2019s someone I haven\u2019t heard anything from. What do you have to
       say about all this, hm?"
-    - '...'
+    - ...
     - "Right. I don\u2019t know what I expected. Whatever, let\u2019s just get on
       with it then. "
     names:
@@ -8926,7 +8922,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.17918098, y: -0.3203491}
+  m_Offset: {x: 0.12760773, y: -0.3203491}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -8937,7 +8933,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.36163807, y: 1.4324234}
+  m_Size: {x: 0.9752155, y: 1.4324234}
   m_EdgeRadius: 0
 --- !u!212 &1297588918
 SpriteRenderer:
@@ -9560,7 +9556,7 @@ Transform:
   - {fileID: 1053946089}
   - {fileID: 133758761}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1436843317
 GameObject:
@@ -9654,7 +9650,7 @@ RectTransform:
   m_Children:
   - {fileID: 1179563408682845701}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: -1, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -9725,7 +9721,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1591207492
 GameObject:
@@ -10013,7 +10009,7 @@ Animator:
   m_GameObject: {fileID: 1799548579}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ca98bc17b16531e49906dbcfca777f43, type: 2}
+  m_Controller: {fileID: 9100000, guid: 7181e940f3674594c864696d22488ec1, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -10061,7 +10057,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 69
-  m_Sprite: {fileID: 558304280887897268, guid: fca5a8b4fbf573142af80e88744a130b, type: 3}
+  m_Sprite: {fileID: 4882937213742102735, guid: 3e4cd33bee8a9324482ef469d76f6d48,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -10901,7 +10898,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1179563408682845701
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10981,25 +10978,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &2809258151005149281
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2809258151005149282}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7181e940f3674594c864696d22488ec1, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2809258151005149282
 GameObject:
   m_ObjectHideFlags: 0
@@ -11009,7 +10987,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2809258151005149280}
-  - component: {fileID: 2809258151005149281}
   - component: {fileID: 2809258151005149283}
   - component: {fileID: 2809258151005149284}
   m_Layer: 0
@@ -11039,7 +11016,7 @@ MonoBehaviour:
   moveableObjects:
     serializedVersion: 2
     m_Bits: 512
-  anim: {fileID: 2809258151005149281}
+  anim: {fileID: 1799548582}
   vertPosition: 0
   moveNumberForScene: 25
 --- !u!50 &2809258151005149284

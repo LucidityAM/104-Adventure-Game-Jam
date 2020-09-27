@@ -52,7 +52,7 @@ public class PlayerController : MonoBehaviour
                     horPosition = Mathf.Abs(Input.GetAxisRaw("Horizontal"));
                     vertPosition = 0;
 
-                    anim.SetBool("moving", false);
+                    anim.SetBool("moving", true);
 
                 }//Basic movement, moves player on 72px grid
 
@@ -69,7 +69,7 @@ public class PlayerController : MonoBehaviour
                     vertPosition = Mathf.Abs(Input.GetAxisRaw("Vertical"));
                     horPosition = 0;
 
-                    anim.SetBool("moving", false);
+                    anim.SetBool("moving", true);
 
                 }//Basic movement, moves player on 72px grid
             }
@@ -77,7 +77,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            anim.SetBool("moving", true);
+            anim.SetBool("moving", false);
         }
     }
 
