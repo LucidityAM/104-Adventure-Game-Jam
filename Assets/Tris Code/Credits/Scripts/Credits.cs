@@ -14,7 +14,7 @@ public class Credits : MonoBehaviour
 
     public IEnumerator EndScene()
     {
-        yield return new WaitForSeconds(43f);
+        yield return new WaitForSeconds(50f);
         SceneManager.LoadScene("Main Menu");
     }
     // Update is called once per frame
