@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -4591,7 +4591,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 2effa7d147343de468a8ee7787f7d41e, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -6472,8 +6472,7 @@ MonoBehaviour:
       driving to this place.
     - "Just shut up! Look, we don\u2019t have a clue what happened to those two after
       we ran away, but we know they\u2019re not here anymore."
-    - "Clearly. Look at this place, it\u2019s even more hellish than it was as a
-      kid!\r\n"
+    - "Clearly. Look at this place, it\u2019s even more hellish than it was as a kid!\r\n"
     - "Which is exactly why I didn\u2019t want to come back, but here we are."
     - 'Think about it guys: what if we just need to look at this place one last time
       to figure out why this happened to us? Why did we have to go through this?'
@@ -6485,7 +6484,7 @@ MonoBehaviour:
     - "Cool it, hotshot, I don\u2019t care about your little revenge plot. You know,
       there\u2019s someone I haven\u2019t heard anything from. What do you have to
       say about all this, hm?"
-    - ...
+    - '...'
     - "Right. I don\u2019t know what I expected. Whatever, let\u2019s just get on
       with it then. "
     names:
