@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Kitchen.unity
     guid: 3b12cd91ef21f53419af85ed8d6469a8
+  - enabled: 1
+    path: Assets/Scenes/Living Room.unity
+    guid: 84693ae93ff1e7d4d8d15fdf9902f355
   m_configObjects: {}
